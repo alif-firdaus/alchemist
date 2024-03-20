@@ -16,6 +16,13 @@ const config: Config = {
 				black: "#171717",
 				white: "#F6F6F6",
 			},
+			padding: {
+				// sm //
+				sectionpxsm: "22px",
+				// md //
+				// lg //
+				sectionpxlg: "90px",
+			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic":

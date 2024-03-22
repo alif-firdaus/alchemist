@@ -15,6 +15,10 @@ import {
 
 // Import Assets //
 import logo from "@/assets/images/logo.webp";
+import dribbble from "@/assets/images/dribbble.webp";
+import linkedin from "@/assets/images/linkedin.webp";
+import twitter from "@/assets/images/twitter.webp";
+import github from "@/assets/images/github.webp";
 
 function Navbar() {
 	// Navbar Links //
@@ -69,7 +73,7 @@ function Navbar() {
 		<>
 			{/* <-- ==== Navbar Mobile Start ==== --> */}
 			<nav className="fixed flex w-full z-50">
-				<div className="flex items-center w-full justify-between px-sectionpxsm py-4 bg-bgbase bg-opacity-40 backdrop-blur-xl">
+				<div className="flex items-center w-full justify-between px-sectionpxsm py-4 bg-bgbase bg-opacity-20 backdrop-blur-xl">
 					<Image
 						src={logo}
 						alt="Alchemist Logo"
@@ -80,7 +84,7 @@ function Navbar() {
 					{/* <-- === Navbar Toggle === --> */}
 					<div
 						onClick={toggleMenu}
-						className="w-fit h-fit flex items-center justify-center rounded-md px-2 py-2 border border-white border-opacity-15 cursor-pointer"
+						className="w-fit h-fit flex items-center justify-center rounded-md px-2 py-2 border border-white border-opacity-10 cursor-pointer"
 					>
 						{isOpen ? (
 							<Cross2Icon className="w-[22px] h-[22px] text-white" />
@@ -101,7 +105,7 @@ function Navbar() {
 					: "-top-full left-0 transition-all duration-700 ease-in-out"
 			}`}
 			>
-				<div className="w-full flex flex-col h-full bg-bgbase bg-opacity-40 backdrop-blur-xl px-sectionpxsm pb-12 pt-32 justify-start items-center">
+				<div className="w-full flex flex-col h-full bg-bgbase bg-opacity-60 backdrop-blur-xl px-sectionpxsm pb-20 pt-32 justify-between items-start">
 					<div className="flex flex-col w-full">
 						<div className="mb-6 flex items-center gap-[14px]">
 							<div className="w-[6px] h-[6px] bg-secondary rounded-full"></div>
@@ -126,12 +130,80 @@ function Navbar() {
 
 						{/* <-- === Connect Button Start === --> */}
 						<div className="mt-12">
-							<div className="border border-white border-opacity-15 flex w-fit items-center justify-center pt-3 pb-[14px] rounded-md pl-8 pr-7 gap-3 cursor-pointer">
-								<p className="text-base text-white">Connect</p>
-								<ArrowRightIcon className="h-4 w-4 text-white" />
+							<div className="bg-white flex w-fit items-center justify-center pt-3 pb-[14px] rounded-md pl-8 pr-7 gap-3 cursor-pointer">
+								<p className="text-base text-black font-medium">
+									Connect
+								</p>
+								<ArrowRightIcon className="h-4 w-4 text-black" />
 							</div>
 						</div>
 						{/* <-- === Connect Button End === --> */}
+					</div>
+
+					<div className="flex flex-col items-start justify-center">
+						<div className="flex flex-col gap-1">
+							<p className="text-sm text-grey">
+								For any inquiries
+							</p>
+							<div className="border-b pb-1 border-white border-opacity-25 w-fit">
+								<p className="text-white text-lg">
+									aliffirdaus@petaniweb.com
+								</p>
+							</div>
+						</div>
+						<div className="flex gap-10 mt-14 items-center justify-start">
+							<Link
+								href="https://dribbble.com/aliffirdaus"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Image
+									src={dribbble}
+									alt="Dribbble"
+									priority={true}
+									className="h-5 w-auto"
+								/>
+							</Link>
+
+							<Link
+								href="https://www.linkedin.com/in/aliffirdaus97/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Image
+									src={linkedin}
+									alt="Linkedin"
+									priority={true}
+									className="h-5 w-auto"
+								/>
+							</Link>
+
+							<Link
+								href="https://twitter.com/whereisalif"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Image
+									src={twitter}
+									alt="Twitter"
+									priority={true}
+									className="h-5 w-auto"
+								/>
+							</Link>
+
+							<Link
+								href="https://github.com/alif-firdaus"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Image
+									src={github}
+									alt="Github"
+									priority={true}
+									className="h-5 w-auto"
+								/>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>

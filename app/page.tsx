@@ -75,6 +75,9 @@ export default function Home() {
 				</div>
 			</section>
 			{/* <-- ==== Hero Section End ==== --> */}
+
+			{/* <-- ==== Expertise Section Start ==== --> */}
+			{/* <-- ==== Expertise Section End ==== --> */}
 		</>
 	);
 }

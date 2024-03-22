@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Import Components //
+import MainButton from "../atoms/main-button";
 
 // Import Radix Icons //
 import {
@@ -130,12 +131,12 @@ function Navbar() {
 
 						{/* <-- === Connect Button Start === --> */}
 						<div className="mt-12">
-							<div className="bg-white flex w-fit items-center justify-center pt-3 pb-[14px] rounded-md pl-8 pr-7 gap-3 cursor-pointer">
-								<p className="text-base text-black font-medium">
-									Connect
-								</p>
-								<ArrowRightIcon className="h-4 w-4 text-black" />
-							</div>
+							<MainButton
+								text="Connect"
+								bgColor=""
+								textColor=""
+								fontWeight=""
+							/>
 						</div>
 						{/* <-- === Connect Button End === --> */}
 					</div>

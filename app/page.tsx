@@ -3,6 +3,7 @@ import Image from "next/image";
 
 // Import Components //
 import Navbar from "@/components/molecules/navbar";
+import MainButton from "@/components/atoms/main-button";
 
 // Import Icons //
 import { ArrowRightIcon } from "@radix-ui/react-icons";
@@ -47,12 +48,12 @@ export default function Home() {
 					</h1>
 					{/* <-- === Schedule a Call Button Start === --> */}
 					<div className="mt-12">
-						<div className="bg-primary flex w-fit items-center justify-center pt-3 pb-[14px] rounded-lg pl-8 pr-7 gap-3 cursor-pointer">
-							<p className="text-base text-white">
-								Schedule a call
-							</p>
-							<ArrowRightIcon className="h-4 w-4 text-white" />
-						</div>
+						<MainButton
+							text="Schedule a call"
+							bgColor=""
+							textColor=""
+							fontWeight=""
+						/>
 					</div>
 					{/* <-- === Schedule a Call Button End === --> */}
 

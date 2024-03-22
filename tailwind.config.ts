@@ -14,6 +14,7 @@ const config: Config = {
 				primary: "#7B4DFC",
 				secondary: "#CFFF71",
 				black: "#171717",
+				grey: "#6E6E6E",
 				white: "#F6F6F6",
 			},
 			padding: {
@@ -22,11 +23,6 @@ const config: Config = {
 				// md //
 				// lg //
 				sectionpxlg: "90px",
-			},
-			backgroundImage: {
-				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-				"gradient-conic":
-					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
 		},
 	},

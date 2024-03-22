@@ -69,7 +69,7 @@ function Navbar() {
 		<>
 			{/* <-- ==== Navbar Mobile Start ==== --> */}
 			<nav className="fixed flex w-full z-50">
-				<div className="flex items-center w-full justify-between px-sectionpxsm py-4 bg-bgbase bg-opacity-15 backdrop-blur-lg">
+				<div className="flex items-center w-full justify-between px-sectionpxsm py-4 bg-bgbase bg-opacity-40 backdrop-blur-xl">
 					<Image
 						src={logo}
 						alt="Alchemist Logo"
@@ -94,14 +94,14 @@ function Navbar() {
 
 			{/* <-- ==== Navbar Open Start ==== --> */}
 			<div
-				className={`fixed w-full z-40
+				className={`fixed w-full h-screen z-40
             ${
 				isOpen
 					? "top-0 left-0 transition-all duration-700 ease-in-out"
 					: "-top-full left-0 transition-all duration-700 ease-in-out"
 			}`}
 			>
-				<div className="w-full flex flex-col h-full bg-bgbase bg-opacity-15 backdrop-blur-lg px-sectionpxsm pb-12 pt-28 justify-center items-center">
+				<div className="w-full flex flex-col h-full bg-bgbase bg-opacity-40 backdrop-blur-xl px-sectionpxsm pb-12 pt-32 justify-start items-center">
 					<div className="flex flex-col w-full">
 						<div className="mb-6 flex items-center gap-[14px]">
 							<div className="w-[6px] h-[6px] bg-secondary rounded-full"></div>

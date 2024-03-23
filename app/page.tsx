@@ -4,6 +4,7 @@ import Image from "next/image";
 // Import Components //
 import Navbar from "@/components/molecules/navbar";
 import MainButton from "@/components/atoms/main-button";
+import SecondaryButton from "@/components/atoms/secondary-button";
 
 // Import Icons //
 import { ArrowRightIcon } from "@radix-ui/react-icons";
@@ -83,7 +84,7 @@ export default function Home() {
 			{/* <-- ==== Expertise Section Start ==== --> */}
 			<section className="px-sectionpxsm pt-48">
 				<div className="flex flex-col items-center justify-center">
-					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center gap-[6px] rounded-full">
+					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 						<p className="text-sm font-medium tracking-tight text-black">
 							What do I do
 						</p>
@@ -127,6 +128,37 @@ export default function Home() {
 				</div>
 			</section>
 			{/* <-- ==== Expertise Section End ==== --> */}
+
+			{/* <-- ==== About Section Start ==== --> */}
+			<section className="px-sectionpxsm pt-48">
+				<div className="flex flex-col items-start justify-center">
+					<div className="flex flex-col">
+						<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
+							<p className="text-sm font-medium tracking-tight text-black">
+								Who I am
+							</p>
+						</div>
+						<h1 className="text-3xl mt-7 text-grey">
+							A passionate Product Designer who's been{" "}
+							<span className="text-white">
+								crafting pixels for over 3 years
+							</span>
+						</h1>
+						<div className="mt-10 flex flex-col gap-4">
+							<MainButton
+								text="Schedule a call"
+								bgColor=""
+								textColor=""
+							/>
+							<SecondaryButton
+								text="Download Resume"
+								fontWeight=""
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			{/* <-- ==== About Section End ==== --> */}
 		</>
 	);
 }

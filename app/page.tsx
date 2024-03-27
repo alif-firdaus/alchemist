@@ -13,6 +13,8 @@ import { Rocket } from "lucide-react";
 // Import Assets //
 import sparkle from "@/assets/images/sparkle.svg";
 import graphic from "@/assets/images/graphic.png";
+import quote from "@/assets/images/quote.svg";
+import memoji from "@/assets/images/memoji.webp";
 
 export default function Home() {
 	return (
@@ -154,6 +156,56 @@ export default function Home() {
 								text="Download Resume"
 								fontWeight=""
 							/>
+						</div>
+					</div>
+					<div className="flex flex-col mt-14">
+						<div className="flex gap-6 flex-col">
+							<p className="text-grey text-lg">
+								<span className="text-white">
+									I am Alif Firdaus, a Product Designer
+									crafting creativity into every pixel.
+								</span>{" "}
+								My journey in design began with a fascination
+								for blending form and function, crafting
+								experiences that resonate with users on a deeper
+								level.
+							</p>
+							<p className="text-grey text-lg">
+								My skillset consists of UI/UX design and a small
+								touch of front-end development,{" "}
+								<span className="text-white">
+									driven by a passion for innovation and a
+									relentless pursuit of perfection.
+								</span>
+							</p>
+						</div>
+						<div className="bg-secondary items-start flex flex-col mt-12 rounded-2xl px-5 pt-5 pb-6">
+							<Image
+								src={quote}
+								alt="Quote Icon"
+								priority={true}
+								className="h-6 w-auto"
+							/>
+							<p className="text-black mt-4 text-xl font-medium leading-snug">
+								Blending artistry and functionality; Crafting
+								beauty in pixels, weaving magic in code.
+							</p>
+							<div className="flex mt-7 gap-5 items-center">
+								<Image
+									src={memoji}
+									alt="Memoji"
+									priority={true}
+									className="h-14 w-auto"
+								/>
+								<div className="flex flex-col">
+									<p className="text-lg text-black font-medium">
+										Alif Firdaus
+									</p>
+									<p className="text-base text-darkgrey">
+										Product Designer
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

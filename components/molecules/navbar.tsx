@@ -15,11 +15,11 @@ import {
 } from "@radix-ui/react-icons";
 
 // Import Assets //
-import logo from "@/assets/images/logo.webp";
-import dribbble from "@/assets/images/dribbble.webp";
-import linkedin from "@/assets/images/linkedin.webp";
-import twitter from "@/assets/images/twitter.webp";
-import github from "@/assets/images/github.webp";
+import logo from "@/assets/images/img-logo.webp";
+import dribbble from "@/assets/images/img-dribbble.webp";
+import linkedin from "@/assets/images/img-linkedin.webp";
+import twitter from "@/assets/images/img-twitter.webp";
+import github from "@/assets/images/img-github.webp";
 
 function Navbar() {
 	// Navbar Links //

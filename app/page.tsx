@@ -11,10 +11,13 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Rocket } from "lucide-react";
 
 // Import Assets //
-import sparkle from "@/assets/images/sparkle.svg";
-import graphic from "@/assets/images/graphic.png";
-import quote from "@/assets/images/quote.svg";
-import memoji from "@/assets/images/memoji.webp";
+import sparkle from "@/assets/images/img-sparkle.svg";
+import graphic from "@/assets/images/img-graphic.png";
+import quote from "@/assets/images/img-quote.svg";
+import memoji from "@/assets/images/img-memoji.webp";
+import petaniweb from "@/assets/images/img-petaniweb.webp";
+import fixit from "@/assets/images/img-fixit.webp";
+import reportify from "@/assets/images/img-reportify.webp";
 
 export default function Home() {
 	return (
@@ -84,7 +87,7 @@ export default function Home() {
 			{/* <-- ==== Hero Section End ==== --> */}
 
 			{/* <-- ==== Expertise Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-48">
+			<section className="px-sectionpxsm pt-52">
 				<div className="flex flex-col items-center justify-center">
 					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 						<p className="text-sm font-medium tracking-tight text-black">
@@ -99,7 +102,7 @@ export default function Home() {
 						I am your go-to Product Designer.
 					</p>
 				</div>
-				<div className="flex flex-col gap-5 mt-12">
+				<div className="flex flex-col gap-5 mt-14">
 					<div className="w-full rounded-xl bg-darkgrey flex flex-col px-7 py-6 h-fit">
 						<h1 className="text-white text-xl font-medium">
 							UI/UX Designer
@@ -132,7 +135,7 @@ export default function Home() {
 			{/* <-- ==== Expertise Section End ==== --> */}
 
 			{/* <-- ==== About Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-48">
+			<section className="px-sectionpxsm pt-56">
 				<div className="flex flex-col items-start justify-center">
 					<div className="flex flex-col">
 						<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
@@ -211,6 +214,185 @@ export default function Home() {
 				</div>
 			</section>
 			{/* <-- ==== About Section End ==== --> */}
+
+			{/* <-- ==== Portfolio Section Start ==== --> */}
+			<section className="px-sectionpxsm pt-56">
+				<div className="flex flex-col items-center justify-center">
+					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
+						<p className="text-sm font-medium tracking-tight text-black">
+							Selected works
+						</p>
+					</div>
+					<h1 className="text-4xl text-center mt-7 text-white">
+						Driven by creating next-level digital products
+					</h1>
+					<p className="text-grey text-base font-light text-center mt-7">
+						Whether it&apos;s a vibrant website or mobile app you
+						seek, I deliver exceptional quality.
+					</p>
+				</div>
+				<div className="flex flex-col gap-16 mt-14">
+					<div className="w-full flex flex-col h-auto">
+						<div className="w-full flex flex-col h-auto relative">
+							<div className="absolute flex gap-[10px] h-fit justify-end inset-0 px-4 py-4">
+								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+									<p className="text-sm text-white font-light">
+										Website
+									</p>
+								</div>
+								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+									<p className="text-sm text-white font-light">
+										Agency
+									</p>
+								</div>
+							</div>
+							<Image
+								src={petaniweb}
+								alt="Petaniweb Mockup"
+								title="Petaniweb Mockup"
+								priority={true}
+								className="w-full h-auto rounded-xl"
+							/>
+						</div>
+						<div className="flex flex-col mt-6 gap-2">
+							<div className="flex items-center justify-start gap-2">
+								<p className="text-grey text-[15px]">2024</p>
+								<div className="w-1 h-1 rounded-full bg-grey"></div>
+								<p className="text-grey text-[15px]">
+									UI/UX Design
+								</p>
+								<div className="w-1 h-1 rounded-full bg-grey"></div>
+								<p className="text-grey text-[15px]">
+									Development
+								</p>
+							</div>
+							<h2 className="text-white text-xl">
+								Petaniweb Website
+							</h2>
+						</div>
+					</div>
+					<div className="w-full flex flex-col h-auto">
+						<div className="w-full flex flex-col h-auto relative">
+							<div className="absolute flex gap-[10px] h-fit justify-end inset-0 px-4 py-4">
+								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+									<p className="text-sm text-white font-light">
+										Mobile App
+									</p>
+								</div>
+								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+									<p className="text-sm text-white font-light">
+										Branding
+									</p>
+								</div>
+							</div>
+							<Image
+								src={fixit}
+								alt="Fixit Mockup"
+								title="Fixit Mockup"
+								priority={true}
+								className="w-full h-auto rounded-xl"
+							/>
+						</div>
+						<div className="flex flex-col mt-6 gap-2">
+							<div className="flex items-center justify-start gap-2">
+								<p className="text-grey text-[15px]">2023</p>
+								<div className="w-1 h-1 rounded-full bg-grey"></div>
+								<p className="text-grey text-[15px]">
+									UI/UX Design
+								</p>
+								<div className="w-1 h-1 rounded-full bg-grey"></div>
+								<p className="text-grey text-[15px]">
+									Research
+								</p>
+							</div>
+							<h2 className="text-white text-xl">
+								Fixit Mobile App
+							</h2>
+						</div>
+					</div>
+				</div>
+				<div className="flex flex-col gap-16 mt-16">
+					<div className="w-full flex flex-col h-auto">
+						<div className="w-full flex flex-col h-auto relative">
+							<div className="absolute flex gap-[10px] h-fit justify-end inset-0 px-4 py-4">
+								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+									<p className="text-sm text-white font-light">
+										Website
+									</p>
+								</div>
+								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+									<p className="text-sm text-white font-light">
+										SAAS
+									</p>
+								</div>
+							</div>
+							<Image
+								src={reportify}
+								alt="Reportify Mockup"
+								title="Reportify Mockup"
+								priority={true}
+								className="w-full h-auto rounded-xl"
+							/>
+						</div>
+						<div className="flex flex-col mt-6 gap-2">
+							<div className="flex items-center justify-start gap-2">
+								<p className="text-grey text-[15px]">2023</p>
+								<div className="w-1 h-1 rounded-full bg-grey"></div>
+								<p className="text-grey text-[15px]">
+									UI/UX Design
+								</p>
+								<div className="w-1 h-1 rounded-full bg-grey"></div>
+								<p className="text-grey text-[15px]">
+									Development
+								</p>
+							</div>
+							<h2 className="text-white text-xl">
+								Reportify Website
+							</h2>
+						</div>
+					</div>
+					<div className="w-full flex flex-col h-auto">
+						<div className="w-full flex flex-col h-auto relative">
+							<div className="absolute flex gap-[10px] h-fit justify-end inset-0 px-4 py-4">
+								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+									<p className="text-sm text-white font-light">
+										Mobile App
+									</p>
+								</div>
+								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+									<p className="text-sm text-white font-light">
+										Crypto
+									</p>
+								</div>
+							</div>
+							<Image
+								src={fixit}
+								alt="Fixit Mockup"
+								title="Fixit Mockup"
+								priority={true}
+								className="w-full h-auto rounded-xl"
+							/>
+						</div>
+						<div className="flex flex-col mt-6 gap-2">
+							<div className="flex items-center justify-start gap-2">
+								<p className="text-grey text-[15px]">2022</p>
+								<div className="w-1 h-1 rounded-full bg-grey"></div>
+								<p className="text-grey text-[15px]">
+									UI/UX Design
+								</p>
+								<div className="w-1 h-1 rounded-full bg-grey"></div>
+								<p className="text-grey text-[15px]">
+									Research
+								</p>
+							</div>
+							<h2 className="text-white text-xl">
+								AQUA Mobile App
+							</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			{/* <-- ==== Portfolio Section End ==== --> */}
 		</>
 	);
 }

@@ -5,9 +5,9 @@ import Image from "next/image";
 import Navbar from "@/components/molecules/navbar";
 import MainButton from "@/components/atoms/main-button";
 import SecondaryButton from "@/components/atoms/secondary-button";
+import ToolsMarquee from "@/components/molecules/tools-marquee";
 
 // Import Icons //
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Rocket } from "lucide-react";
 
 // Import Assets //
@@ -34,6 +34,7 @@ export default function Home() {
 							<Image
 								src={sparkle}
 								alt="Sparkle"
+								title="Sparkle"
 								priority={true}
 								className="h-[14px] w-auto"
 							/>
@@ -79,6 +80,7 @@ export default function Home() {
 					<Image
 						src={graphic}
 						alt="Graphic"
+						title="Graphic"
 						priority={true}
 						className="w-full h-auto"
 					/>
@@ -186,6 +188,7 @@ export default function Home() {
 							<Image
 								src={quote}
 								alt="Quote Icon"
+								title="Quote Icon"
 								priority={true}
 								className="h-6 w-auto"
 							/>
@@ -197,6 +200,7 @@ export default function Home() {
 								<Image
 									src={memoji}
 									alt="Memoji"
+									title="Memoji"
 									priority={true}
 									className="h-14 w-auto"
 								/>
@@ -216,7 +220,7 @@ export default function Home() {
 			{/* <-- ==== About Section End ==== --> */}
 
 			{/* <-- ==== Portfolio Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-56">
+			<section className="px-sectionpxsm pt-60">
 				<div className="flex flex-col items-center justify-center">
 					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 						<p className="text-sm font-medium tracking-tight text-black">
@@ -393,6 +397,37 @@ export default function Home() {
 				</div>
 			</section>
 			{/* <-- ==== Portfolio Section End ==== --> */}
+
+			{/* <-- ==== Tech-stack Section Start ==== --> */}
+			<section className="px-sectionpxsm pt-60">
+				<div className="flex flex-col items-center justify-center">
+					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
+						<p className="text-sm font-medium tracking-tight text-black">
+							Tools & Tech-stacks
+						</p>
+					</div>
+					<h1 className="text-4xl text-center mt-7 text-white">
+						Crafting beauty in pixels, weaving magic in code
+					</h1>
+					<p className="text-grey text-base font-light text-center mt-7">
+						Agile and adaptable, from project planning, crafting
+						interfaces to diving into intricade code.
+					</p>
+				</div>
+			</section>
+			<div className="mt-14">
+				<ToolsMarquee />
+			</div>
+			<section className="px-sectionpxsm pt-20">
+				<div className="flex items-center justify-center gap-5">
+					<div className="w-14 h-[1px] bg-gradient-to-r from-transparent to-neutral-500"></div>
+					<p className="text-base text-white font-light text-center">
+						No stagnation
+					</p>
+					<div className="w-14 h-[1px] bg-gradient-to-l from-transparent to-neutral-500"></div>
+				</div>
+			</section>
+			{/* <-- ==== Tech-stack Section End ==== --> */}
 		</>
 	);
 }

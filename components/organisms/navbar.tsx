@@ -8,11 +8,7 @@ import Image from "next/image";
 import MainButton from "../atoms/main-button";
 
 // Import Radix Icons //
-import {
-	HamburgerMenuIcon,
-	Cross2Icon,
-	ArrowRightIcon,
-} from "@radix-ui/react-icons";
+import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
 
 // Import Assets //
 import logo from "@/assets/images/img-logo.webp";
@@ -78,6 +74,7 @@ function Navbar() {
 					<Image
 						src={logo}
 						alt="Alchemist Logo"
+						title="Alchemist Logo"
 						priority={true}
 						className="h-7 w-auto"
 					/>

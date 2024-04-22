@@ -6,7 +6,7 @@ import MainButton from "@/components/atoms/main-button";
 import SecondaryButton from "@/components/atoms/secondary-button";
 import ToolsMarquee from "@/components/molecules/tools-marquee";
 import Navbar from "@/components/organisms/navbar";
-import Footer from "@/components/organisms/footer-mobile";
+import Footer from "@/components/organisms/footer";
 
 // Import Icons //
 import { Rocket } from "lucide-react";

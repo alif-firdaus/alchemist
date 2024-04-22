@@ -6,6 +6,7 @@ import Image from "next/image";
 
 // Import Components //
 import MainButton from "../atoms/main-button";
+import SecondaryButtonDesktop from "../atoms/secondary-button-desktop";
 
 // Import Radix Icons //
 import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
@@ -69,15 +70,17 @@ function Navbar() {
 	return (
 		<>
 			{/* <-- ==== Navbar Mobile Start ==== --> */}
-			<nav className="fixed flex w-full z-50">
+			<nav className="fixed flex w-full z-50 lg:hidden">
 				<div className="flex items-center w-full justify-between px-sectionpxsm py-4 bg-bgbase bg-opacity-20 backdrop-blur-xl">
-					<Image
-						src={logo}
-						alt="Alchemist Logo"
-						title="Alchemist Logo"
-						priority={true}
-						className="h-7 w-auto"
-					/>
+					<Link href="/">
+						<Image
+							src={logo}
+							alt="Alchemist Logo"
+							title="Alchemist Logo"
+							priority={true}
+							className="h-7 w-auto"
+						/>
+					</Link>
 
 					{/* <-- === Navbar Toggle === --> */}
 					<div
@@ -127,14 +130,16 @@ function Navbar() {
 						{/* <-- === Navbar Links End === --> */}
 
 						{/* <-- === Connect Button Start === --> */}
-						<div className="mt-12">
-							<MainButton
-								text="Connect"
-								bgColor=""
-								textColor=""
-								fontWeight=""
-							/>
-						</div>
+						<Link href="/connect">
+							<div className="mt-12">
+								<MainButton
+									text="Connect"
+									bgColor=""
+									textColor=""
+									fontWeight=""
+								/>
+							</div>
+						</Link>
 						{/* <-- === Connect Button End === --> */}
 					</div>
 
@@ -207,6 +212,39 @@ function Navbar() {
 			</div>
 			{/* <-- ==== Navbar Open End ==== --> */}
 			{/* <-- ==== Navbar Mobile End ==== --> */}
+
+			{/* <-- ==== Navbar Desktop Start ==== --> */}
+			<nav className="hidden lg:flex fixed w-full px-sectionpxlg bg-bgbase bg-opacity-25 backdrop-blur-2xl z-50 py-[22px] items-center justify-between">
+				<Link href="/">
+					<Image
+						src={logo}
+						alt="Alchemist Logo"
+						title="Alchemist Logo"
+						priority={true}
+						className="h-7 w-auto"
+					/>
+				</Link>
+				{/* <-- === Navbar Desktop Links Start === --> */}
+				<div className="flex items-center justify-center gap-9">
+					{navLinks.map((link, index) => (
+						<div
+							key={index}
+							className="text-[15px] hover:text-secondary duration-300 transition-all ease-in-out text-white"
+						>
+							<NavItem
+								key={index}
+								text={link.text}
+								path={link.path}
+							/>
+						</div>
+					))}
+				</div>
+				{/* <-- === Navbar Desktop Links End === --> */}
+				<Link href="/connect">
+					<SecondaryButtonDesktop text="Connect" />
+				</Link>
+			</nav>
+			{/* <-- ==== Navbar Desktop End ==== --> */}
 		</>
 	);
 }

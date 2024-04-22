@@ -2,10 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Import Components //
-import Navbar from "@/components/molecules/navbar";
 import MainButton from "@/components/atoms/main-button";
 import SecondaryButton from "@/components/atoms/secondary-button";
 import ToolsMarquee from "@/components/molecules/tools-marquee";
+import Navbar from "@/components/organisms/navbar";
+import Footer from "@/components/organisms/footer-mobile";
 
 // Import Icons //
 import { Rocket } from "lucide-react";
@@ -137,7 +138,7 @@ export default function Home() {
 			{/* <-- ==== Expertise Section End ==== --> */}
 
 			{/* <-- ==== About Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-56">
+			<section className="px-sectionpxsm mt-44 pt-28 pb-32 bg-darkgrey">
 				<div className="flex flex-col items-start justify-center">
 					<div className="flex flex-col">
 						<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
@@ -220,7 +221,7 @@ export default function Home() {
 			{/* <-- ==== About Section End ==== --> */}
 
 			{/* <-- ==== Portfolio Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-60">
+			<section className="px-sectionpxsm pt-44">
 				<div className="flex flex-col items-center justify-center">
 					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 						<p className="text-sm font-medium tracking-tight text-black">
@@ -420,14 +421,20 @@ export default function Home() {
 			</div>
 			<section className="px-sectionpxsm pt-20">
 				<div className="flex items-center justify-center gap-5">
-					<div className="w-14 h-[1px] bg-gradient-to-r from-transparent to-neutral-500"></div>
-					<p className="text-base text-white font-light text-center">
-						No stagnation
+					<div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-neutral-500"></div>
+					<p className="text-base text-grey font-light text-center">
+						To infinity and beyond
 					</p>
-					<div className="w-14 h-[1px] bg-gradient-to-l from-transparent to-neutral-500"></div>
+					<div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-neutral-500"></div>
 				</div>
 			</section>
 			{/* <-- ==== Tech-stack Section End ==== --> */}
+
+			{/* <-- ==== Footer Start ==== --> */}
+			<section className="mt-44">
+				<Footer />
+			</section>
+			{/* <-- ==== Footer End ==== --> */}
 		</>
 	);
 }

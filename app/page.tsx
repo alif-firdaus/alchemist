@@ -92,45 +92,46 @@ export default function Home() {
 			{/* <-- ==== Hero Section End ==== --> */}
 
 			{/* <-- ==== Expertise Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-52">
+			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-52 lg:pt-[340px]">
 				<div className="flex flex-col items-center justify-center">
-					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
+					<div className="bg-secondary py-[5px] lg:py-[6px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 						<p className="text-sm font-medium tracking-tight text-black">
 							What do I do
 						</p>
 					</div>
-					<h1 className="text-4xl text-center mt-7 text-white">
-						No limitation. No stagnation. No comfort-zone.
+					<h1 className="text-4xl lg:text-6xl lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
+						No limitation. No stagnation.
+						<br className="hidden lg:block" /> No comfort-zone.
 					</h1>
-					<p className="text-grey text-base font-light text-center mt-7">
+					<p className="text-grey text-base lg:text-[19px] font-light text-center mt-7 lg:mt-10">
 						Looking for an artsy and techie pal? Search no further!
 						I am your go-to Product Designer.
 					</p>
 				</div>
-				<div className="flex flex-col gap-5 mt-14">
-					<div className="w-full rounded-xl bg-darkgrey flex flex-col px-7 py-6 h-fit">
-						<h1 className="text-white text-xl font-medium">
+				<div className="flex flex-col lg:flex-row gap-5 mt-14 lg:mt-24">
+					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 py-6 lg:py-7 h-fit">
+						<h1 className="text-white text-xl lg:text-[21px] font-medium">
 							UI/UX Designer
 						</h1>
-						<p className="text-grey text-sm mt-3 leading-relaxed">
+						<p className="text-grey text-sm lg:text-[15px] mt-3 lg:mt-4 leading-relaxed">
 							From strategy to delivering results, I am the
-							architect of captivating digital products.
+							architect of crafting digital products.
 						</p>
 					</div>
-					<div className="w-full rounded-xl bg-darkgrey flex flex-col px-7 py-6 h-fit">
-						<h1 className="text-white text-xl font-medium">
+					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 py-6 lg:py-7 h-fit">
+						<h1 className="text-white text-xl lg:text-[21px] font-medium">
 							Front-end Developer
 						</h1>
-						<p className="text-grey text-sm mt-3 leading-relaxed">
+						<p className="text-grey text-sm lg:text-[15px] mt-3 lg:mt-4 leading-relaxed">
 							I might not be an expert. But, I am able to
 							translate design into living web magic.
 						</p>
 					</div>
-					<div className="w-full rounded-xl bg-darkgrey flex flex-col px-7 py-6 h-fit">
-						<h1 className="text-white text-xl font-medium">
+					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 py-6 lg:py-7 h-fit">
+						<h1 className="text-white text-xl lg:text-[21px] font-medium">
 							No-code Developer
 						</h1>
-						<p className="text-grey text-sm mt-3 leading-relaxed">
+						<p className="text-grey text-sm lg:text-[15px] mt-3 lg:mt-4 leading-relaxed">
 							Anything can be built with seamless user-interface
 							and its functions in one canvas.
 						</p>

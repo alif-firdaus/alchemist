@@ -214,7 +214,7 @@ function Navbar() {
 			{/* <-- ==== Navbar Mobile End ==== --> */}
 
 			{/* <-- ==== Navbar Desktop Start ==== --> */}
-			<nav className="hidden lg:flex fixed w-full px-sectionpxlg 2xl:px-sectionpx2xl bg-bgbase bg-opacity-25 backdrop-blur-2xl z-50 py-[22px] items-center justify-between">
+			<nav className="hidden lg:flex fixed w-full px-sectionpxlg 2xl:px-sectionpx2xl bg-bgbase bg-opacity-25 backdrop-blur-2xl z-50 py-5 items-center justify-between">
 				<Link href="/">
 					<Image
 						src={logo}

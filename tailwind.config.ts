@@ -24,6 +24,8 @@ const config: Config = {
 				// md //
 				// lg //
 				sectionpxlg: "90px",
+				// 2xl //
+				sectionpx2xl: "160px",
 			},
 			backgroundImage: {
 				petaniweb: "url('../assets/images/img-petaniweb.webp')",

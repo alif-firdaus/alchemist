@@ -20,7 +20,7 @@ const MainButton = ({
 
 	return (
 		<button
-			className={`${bgColorClass} flex w-full items-center justify-center pt-3 pb-[15px] rounded-md pl-8 pr-7 gap-3`}
+			className={`${bgColorClass} flex w-full items-center justify-center pt-3 pb-[15px] rounded-full pl-8 pr-7 gap-3`}
 		>
 			<p className={`text-base ${textColorClass} ${fontWeightClass}`}>
 				{text}

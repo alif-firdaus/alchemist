@@ -99,7 +99,7 @@ function Navbar() {
 
 			{/* <-- ==== Navbar Open Start ==== --> */}
 			<div
-				className={`fixed w-full h-screen z-40
+				className={`fixed w-full h-screen z-40 lg:hidden
             ${
 				isOpen
 					? "top-0 left-0 transition-all duration-700 ease-in-out"
@@ -214,7 +214,7 @@ function Navbar() {
 			{/* <-- ==== Navbar Mobile End ==== --> */}
 
 			{/* <-- ==== Navbar Desktop Start ==== --> */}
-			<nav className="hidden lg:flex fixed w-full px-sectionpxlg bg-bgbase bg-opacity-25 backdrop-blur-2xl z-50 py-[22px] items-center justify-between">
+			<nav className="hidden lg:flex fixed w-full px-sectionpxlg 2xl:px-sectionpx2xl bg-bgbase bg-opacity-25 backdrop-blur-2xl z-50 py-[22px] items-center justify-between">
 				<Link href="/">
 					<Image
 						src={logo}
@@ -225,25 +225,55 @@ function Navbar() {
 					/>
 				</Link>
 				{/* <-- === Navbar Desktop Links Start === --> */}
-				<div className="flex items-center justify-center gap-9">
-					{navLinks.map((link, index) => (
-						<div
-							key={index}
-							className="text-[15px] hover:text-secondary duration-300 transition-all ease-in-out text-white"
-						>
-							<NavItem
+				{/* <div className="flex items-center justify-center gap-9">
+						{navLinks.map((link, index) => (
+							<div
 								key={index}
-								text={link.text}
-								path={link.path}
-							/>
+								className="text-[15px] hover:text-secondary duration-300 transition-all ease-in-out text-white cursor-pointer"
+							>
+								<NavItem
+									key={index}
+									text={link.text}
+									path={link.path}
+								/>
+							</div>
+						))}
+					</div> */}
+				<div className="flex items-center justify-center rounded-full border border-white border-opacity-10 gap-1 p-[6px]">
+					<Link href="/about">
+						<div className="flex items-center justify-center px-5 rounded-full bg-inherit py-[10px] hover:bg-white hover:bg-opacity-[0.07] duration-300 cursor-pointer">
+							<p className="text-sm text-white">About</p>
 						</div>
-					))}
+					</Link>
+
+					<Link href="/expertise">
+						<div className="flex items-center justify-center px-5 rounded-full bg-inherit py-[10px] hover:bg-white hover:bg-opacity-[0.07] duration-300 cursor-pointer">
+							<p className="text-sm text-white">Expertise</p>
+						</div>
+					</Link>
+
+					<Link href="/case-study">
+						<div className="flex items-center justify-center px-5 rounded-full bg-inherit py-[10px] hover:bg-white hover:bg-opacity-[0.07] duration-300 cursor-pointer">
+							<p className="text-sm text-white">Case Study</p>
+						</div>
+					</Link>
+
+					<Link
+						href="https://dribbble.com/aliffirdaus"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<div className="flex items-center justify-center px-5 rounded-full bg-inherit py-[10px] hover:bg-white hover:bg-opacity-[0.07] duration-300 cursor-pointer">
+							<p className="text-sm text-white">Portfolio</p>
+						</div>
+					</Link>
 				</div>
 				{/* <-- === Navbar Desktop Links End === --> */}
 				<Link href="/connect">
 					<SecondaryButtonDesktop text="Connect" />
 				</Link>
 			</nav>
+
 			{/* <-- ==== Navbar Desktop End ==== --> */}
 		</>
 	);

@@ -28,48 +28,50 @@ export default function Home() {
 			{/* <-- ==== Navbar End ==== --> */}
 
 			{/* <-- ==== Hero Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-36 flex flex-col">
-				<div className="flex flex-col justify-center">
-					<div className="border border-white border-opacity-15 w-fit rounded-full flex gap-[14px] pl-[6px] pr-5 py-[6px] items-center justify-center">
-						<div className="bg-secondary py-[5px] pl-[10px] pr-3 flex items-center justify-center gap-[6px] rounded-full">
-							<Image
-								src={sparkle}
-								alt="Sparkle"
-								title="Sparkle"
-								priority={true}
-								className="h-[14px] w-auto"
-							/>
-							<p className="text-sm font-medium tracking-tight text-black">
-								Mission
+			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-36 lg:pt-52 flex flex-col lg:flex-row lg:h-fit">
+				<div className="flex flex-col justify-center lg:w-full lg:justify-between">
+					<div className="lg:h-full lg:flex lg:flex-col">
+						<div className="border border-white border-opacity-15 w-fit rounded-full flex gap-[14px] pl-[6px] pr-5 py-[6px] items-center justify-center">
+							<div className="bg-secondary py-[5px] pl-[10px] pr-3 flex items-center justify-center gap-[6px] rounded-full">
+								<Image
+									src={sparkle}
+									alt="Sparkle"
+									title="Sparkle"
+									priority={true}
+									className="h-[14px] w-auto"
+								/>
+								<p className="text-sm font-medium tracking-tight text-black">
+									Mission
+								</p>
+							</div>
+							<p className="text-sm tracking-tight text-white">
+								Elevating products into perfection
 							</p>
 						</div>
-						<p className="text-sm tracking-tight text-white">
-							Elevating products into perfection
-						</p>
-					</div>
-					<h1 className="text-[46px] leading-[1.15] mt-7 text-white">
-						Stand out as
-						<br />
-						your passionate
-						<br />
-						pixel crafter
-					</h1>
-					{/* <-- === Schedule a Call Button Start === --> */}
-					<div className="mt-12">
-						<MainButton
-							text="Schedule a call"
-							bgColor=""
-							textColor=""
-							fontWeight=""
-						/>
+						<h1 className="text-[46px] lg:text-[70px] leading-[1.15] mt-7 lg:mt-8 text-white">
+							Stand out as
+							<br />
+							your passionate
+							<br />
+							pixel crafter
+						</h1>
+						{/* <-- === Schedule a Call Button Start === --> */}
+						<div className="mt-12 lg:mt-14">
+							<MainButton
+								text="Schedule a call"
+								bgColor=""
+								textColor=""
+								fontWeight=""
+							/>
+						</div>
 					</div>
 					{/* <-- === Schedule a Call Button End === --> */}
 
-					<div className="mt-24">
+					<div className="mt-24 lg:mt-auto">
 						<Rocket color="#F6F6F6" size={28} strokeWidth={1} />
-						<p className="text-grey text-lg font-light mt-5">
-							I am on a mission to create visually stunning
-							designs that not only{" "}
+						<p className="text-grey text-lg font-light mt-5 lg:leading-[1.8]">
+							On a mission to create stunning digital products
+							that not only <br className="hidden lg:block" />
 							<span className="text-white">
 								look good but also function seamlessly and
 								flawlessly.
@@ -77,13 +79,13 @@ export default function Home() {
 						</p>
 					</div>
 				</div>
-				<div className="w-full mt-28">
+				<div className="w-full mt-28 lg:h-full lg:mt-0 lg:flex lg:justify-end">
 					<Image
 						src={graphic}
 						alt="Graphic"
 						title="Graphic"
 						priority={true}
-						className="w-full h-auto"
+						className="w-full h-auto lg:w-3/4"
 					/>
 				</div>
 			</section>

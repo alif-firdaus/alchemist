@@ -23,7 +23,7 @@ const config: Config = {
 				sectionpxsm: "22px",
 				// md //
 				// lg //
-				sectionpxlg: "90px",
+				sectionpxlg: "120px",
 				// 2xl //
 				sectionpx2xl: "160px",
 			},

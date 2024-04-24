@@ -57,12 +57,18 @@ export default function Home() {
 						</h1>
 						{/* <-- === Schedule a Call Button Start === --> */}
 						<div className="mt-12 lg:mt-14">
-							<MainButton
-								text="Schedule a call"
-								bgColor=""
-								textColor=""
-								fontWeight=""
-							/>
+							<Link
+								href="https://calendly.com/aliffirdaus-discussion/project-discussion"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<MainButton
+									text="Schedule a call"
+									bgColor=""
+									textColor=""
+									fontWeight=""
+								/>
+							</Link>
 						</div>
 					</div>
 					{/* <-- === Schedule a Call Button End === --> */}
@@ -141,80 +147,93 @@ export default function Home() {
 			{/* <-- ==== Expertise Section End ==== --> */}
 
 			{/* <-- ==== About Section Start ==== --> */}
-			<section className="px-sectionpxsm mt-44 pt-28 pb-32 bg-darkgrey">
-				<div className="flex flex-col items-start justify-center">
-					<div className="flex flex-col">
-						<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
-							<p className="text-sm font-medium tracking-tight text-black">
-								Who I am
-							</p>
-						</div>
-						<h1 className="text-3xl mt-7 text-grey">
-							A passionate Product Designer who's been{" "}
+			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl mt-44 lg:mt-64 pt-28 lg:pt-36 pb-32 lg:pb-48 bg-darkgrey">
+				<div className="bg-secondary py-[5px] lg:py-[6px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
+					<p className="text-sm font-medium tracking-tight text-black">
+						Who I am
+					</p>
+				</div>
+				<div className="flex flex-col lg:flex-row lg:mt-10 items-start justify-center">
+					<div className="flex flex-col lg:w-full">
+						<h1 className="text-3xl lg:text-[42px] mt-7 lg:mt-0 lg:leading-[1.22] text-grey">
+							A passionate Product
+							<br className="hidden lg:block" /> Designer who's
+							been{" "}
 							<span className="text-white">
-								crafting pixels for over 3 years
+								crafting
+								<br className="hidden lg:block" /> pixels for
+								over 3 years
 							</span>
 						</h1>
-						<div className="mt-10 flex flex-col gap-4">
-							<MainButton
-								text="Schedule a call"
-								bgColor=""
-								textColor=""
-							/>
+						<div className="mt-10 lg:mt-12 flex flex-col lg:flex-row gap-4">
+							<Link
+								href="https://calendly.com/aliffirdaus-discussion/project-discussion"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<MainButton
+									text="Schedule a call"
+									bgColor=""
+									textColor=""
+								/>
+							</Link>
 							<SecondaryButton
 								text="Download Resume"
 								fontWeight=""
 							/>
 						</div>
 					</div>
-					<div className="flex flex-col mt-14">
-						<div className="flex gap-6 flex-col">
-							<p className="text-grey text-lg">
-								<span className="text-white">
-									I am Alif Firdaus, a Product Designer
-									crafting creativity into every pixel.
-								</span>{" "}
-								My journey in design began with a fascination
-								for blending form and function, crafting
-								experiences that resonate with users on a deeper
-								level.
-							</p>
-							<p className="text-grey text-lg">
-								My skillset consists of UI/UX design and a small
-								touch of front-end development,{" "}
-								<span className="text-white">
-									driven by a passion for innovation and a
-									relentless pursuit of perfection.
-								</span>
-							</p>
-						</div>
-						<div className="bg-secondary items-start flex flex-col mt-12 rounded-2xl px-5 pt-5 pb-6">
-							<Image
-								src={quote}
-								alt="Quote Icon"
-								title="Quote Icon"
-								priority={true}
-								className="h-6 w-auto"
-							/>
-							<p className="text-black mt-4 text-xl font-medium leading-snug">
-								Blending artistry and functionality; Crafting
-								beauty in pixels, weaving magic in code.
-							</p>
-							<div className="flex mt-7 gap-5 items-center">
+					<div className="flex flex-col mt-14 lg:mt-0 lg:w-full lg:items-end">
+						<div className="lg:w-5/6">
+							<div className="flex gap-6 flex-col">
+								<p className="text-grey text-lg">
+									<span className="text-white">
+										I am Alif Firdaus, a Product Designer
+										crafting creativity into every pixel.
+									</span>{" "}
+									My journey in design began with a
+									fascination for blending form and function,
+									crafting experiences that resonate with
+									users on a deeper level.
+								</p>
+								<p className="text-grey text-lg">
+									My skillset consists of UI/UX design and a
+									small touch of front-end development,{" "}
+									<span className="text-white">
+										driven by a passion for innovation and a
+										relentless pursuit of perfection.
+									</span>
+								</p>
+							</div>
+							<div className="bg-secondary items-start flex flex-col mt-12 rounded-2xl px-5 lg:px-6 pt-5 lg:pt-6 pb-6 lg:pb-7">
 								<Image
-									src={memoji}
-									alt="Memoji"
-									title="Memoji"
+									src={quote}
+									alt="Quote Icon"
+									title="Quote Icon"
 									priority={true}
-									className="h-14 w-auto"
+									className="h-6 w-auto lg:w-8"
 								/>
-								<div className="flex flex-col">
-									<p className="text-lg text-black font-medium">
-										Alif Firdaus
-									</p>
-									<p className="text-base text-darkgrey">
-										Product Designer
-									</p>
+								<p className="text-black mt-4 text-xl lg:text-[21px] font-medium leading-snug">
+									Blending artistry and functionality;
+									Crafting beauty in pixels, weaving magic in
+									code.
+								</p>
+								<div className="flex mt-7 gap-5 items-center">
+									<Image
+										src={memoji}
+										alt="Memoji"
+										title="Memoji"
+										priority={true}
+										className="h-14 w-auto"
+									/>
+									<div className="flex flex-col">
+										<p className="text-lg text-black font-medium">
+											Alif Firdaus
+										</p>
+										<p className="text-base text-darkgrey">
+											Product Designer
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>

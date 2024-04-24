@@ -18,7 +18,13 @@ export default function Footer() {
 					is my calling
 				</h1>
 				<div className="mt-14">
-					<MainButton text="Schedule a call" />
+					<Link
+						href="https://calendly.com/aliffirdaus-discussion/project-discussion"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<MainButton text="Schedule a call" />
+					</Link>
 				</div>
 			</section>
 

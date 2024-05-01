@@ -4,12 +4,14 @@ import Image from "next/image";
 // Import Components //
 import MainButton from "@/components/atoms/main-button";
 import SecondaryButton from "@/components/atoms/secondary-button";
+import PortfolioCard from "@/components/organisms/portfolio-card";
 import ToolsMarquee from "@/components/molecules/tools-marquee";
 import Navbar from "@/components/organisms/navbar";
 import Footer from "@/components/organisms/footer";
 
 // Import Icons //
 import { Rocket } from "lucide-react";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 // Import Assets //
 import sparkle from "@/assets/images/img-sparkle.svg";
@@ -243,101 +245,124 @@ export default function Home() {
 			{/* <-- ==== About Section End ==== --> */}
 
 			{/* <-- ==== Portfolio Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-44">
+			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-44 lg:pt-56">
 				<div className="flex flex-col items-center justify-center">
-					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
+					<div className="bg-secondary py-[5px] lg:py-[6px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 						<p className="text-sm font-medium tracking-tight text-black">
 							Selected works
 						</p>
 					</div>
-					<h1 className="text-4xl text-center mt-7 text-white">
-						Driven by creating next-level digital products
+					<h1 className="text-4xl lg:text-6xl lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
+						Driven by creating
+						<br className="hidden lg:block" /> next-level digital
+						products
 					</h1>
-					<p className="text-grey text-base font-light text-center mt-7">
+					<p className="text-grey text-base lg:text-[19px] font-light text-center mt-7 lg:mt-10">
 						Whether it&apos;s a vibrant website or mobile app you
 						seek, I deliver exceptional quality.
 					</p>
 				</div>
-				<div className="flex flex-col gap-16 mt-14">
+				<div className="flex flex-col lg:flex-row gap-16 lg:gap-7 mt-14 lg:mt-24">
 					<div className="w-full flex flex-col h-auto">
-						<div className="w-full flex flex-col h-auto relative">
-							<div className="absolute flex gap-[10px] h-fit justify-end inset-0 px-4 py-4">
-								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+						<div className="group w-full flex flex-col h-auto relative lg:cursor-pointer">
+							<div className="absolute z-50 flex gap-[10px] h-fit justify-end inset-0 px-4 lg:px-5 py-4 lg:py-5">
+								<div className="py-[6px] lg:py-2 rounded-full px-4 lg:px-[18px] bg-white bg-opacity-10">
 									<p className="text-sm text-white font-light">
 										Website
 									</p>
 								</div>
-								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+								<div className="py-[6px] lg:py-2 rounded-full px-4 lg:px-[18px] bg-white bg-opacity-10">
 									<p className="text-sm text-white font-light">
 										Agency
 									</p>
 								</div>
 							</div>
+							<div className="hidden absolute z-40 w-full h-full inset-0 m-auto lg:block lg:group-hover:backdrop-blur-sm duration-200 transition-all ease-in-out">
+								<Link href="/case-study/petaniweb">
+									<div className="absolute hidden lg:group-hover:flex items-center justify-center z-50 w-24 h-24 rounded-full bg-secondary m-auto inset-0 duration-300 ease-in transition-all">
+										<ArrowTopRightIcon className="text-black w-10 h-10" />
+									</div>
+								</Link>
+							</div>
+
 							<Image
 								src={petaniweb}
-								alt="Petaniweb Mockup"
-								title="Petaniweb Mockup"
+								alt="PetaniWeb Mockup"
 								priority={true}
-								className="w-full h-auto rounded-xl"
+								className="w-full h-auto rounded-xl lg:rounded-3xl"
 							/>
 						</div>
-						<div className="flex flex-col mt-6 gap-2">
+
+						<div className="flex flex-col mt-6 lg:mt-7 gap-2 lg:gap-3">
 							<div className="flex items-center justify-start gap-2">
-								<p className="text-grey text-[15px]">2024</p>
+								<p className="text-grey text-[15px] lg:text-[17px]">
+									2024
+								</p>
 								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px]">
+								<p className="text-grey text-[15px] lg:text-[17px]">
 									UI/UX Design
 								</p>
 								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px]">
+								<p className="text-grey text-[15px] lg:text-[17px]">
 									Development
 								</p>
 							</div>
-							<h2 className="text-white text-xl">
-								Petaniweb Website
+							<h2 className="text-white text-xl lg:text-2xl">
+								PetaniWeb Website
 							</h2>
 						</div>
 					</div>
+
 					<div className="w-full flex flex-col h-auto">
-						<div className="w-full flex flex-col h-auto relative">
-							<div className="absolute flex gap-[10px] h-fit justify-end inset-0 px-4 py-4">
-								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
-									<p className="text-sm text-white font-light">
-										Mobile App
+						<div className="w-full h-auto lg:pt-28">
+							<div className="group w-full flex flex-col h-auto relative lg:cursor-pointer">
+								<div className="absolute z-50 flex gap-[10px] h-fit justify-end inset-0 px-4 lg:px-5 py-4 lg:py-5">
+									<div className="py-[6px] lg:py-2 rounded-full px-4 lg:px-[18px] bg-white bg-opacity-10">
+										<p className="text-sm text-white font-light">
+											Mobile App
+										</p>
+									</div>
+									<div className="py-[6px] lg:py-2 rounded-full px-4 lg:px-[18px] bg-white bg-opacity-10">
+										<p className="text-sm text-white font-light">
+											Branding
+										</p>
+									</div>
+								</div>
+								<div className="hidden absolute z-40 w-full h-full inset-0 m-auto lg:group-hover:block lg:group-hover:backdrop-blur-sm duration-300 transition-all ease-in-out">
+									<div className="absolute flex items-center justify-center z-50 w-24 h-24 rounded-full bg-secondary m-auto inset-0">
+										<ArrowTopRightIcon className="text-black w-10 h-10" />
+									</div>
+								</div>
+								<Image
+									src={fixit}
+									alt="Fixit Mockup"
+									priority={true}
+									className="w-full h-auto rounded-xl lg:rounded-3xl"
+								/>
+							</div>
+
+							<div className="flex flex-col mt-6 lg:mt-7 gap-2 lg:gap-3">
+								<div className="flex items-center justify-start gap-2">
+									<p className="text-grey text-[15px] lg:text-[17px]">
+										2023
+									</p>
+									<div className="w-1 h-1 rounded-full bg-grey"></div>
+									<p className="text-grey text-[15px] lg:text-[17px]">
+										UI/UX Design
+									</p>
+									<div className="w-1 h-1 rounded-full bg-grey"></div>
+									<p className="text-grey text-[15px] lg:text-[17px]">
+										Research
 									</p>
 								</div>
-								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
-									<p className="text-sm text-white font-light">
-										Branding
-									</p>
-								</div>
+								<h2 className="text-white text-xl lg:text-2xl">
+									Fixit Mobile App
+								</h2>
 							</div>
-							<Image
-								src={fixit}
-								alt="Fixit Mockup"
-								title="Fixit Mockup"
-								priority={true}
-								className="w-full h-auto rounded-xl"
-							/>
-						</div>
-						<div className="flex flex-col mt-6 gap-2">
-							<div className="flex items-center justify-start gap-2">
-								<p className="text-grey text-[15px]">2023</p>
-								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px]">
-									UI/UX Design
-								</p>
-								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px]">
-									Research
-								</p>
-							</div>
-							<h2 className="text-white text-xl">
-								Fixit Mobile App
-							</h2>
 						</div>
 					</div>
 				</div>
+
 				<div className="flex flex-col gap-16 mt-16">
 					<div className="w-full flex flex-col h-auto">
 						<div className="w-full flex flex-col h-auto relative">

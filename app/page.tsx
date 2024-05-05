@@ -159,8 +159,8 @@ export default function Home() {
 					<div className="flex flex-col lg:w-full">
 						<h1 className="text-3xl lg:text-[42px] mt-7 lg:mt-0 lg:leading-[1.22] text-grey">
 							A passionate Product
-							<br className="hidden lg:block" /> Designer who's
-							been{" "}
+							<br className="hidden lg:block" /> Designer
+							who&apos;s been{" "}
 							<span className="text-white">
 								crafting
 								<br className="hidden lg:block" /> pixels for
@@ -399,7 +399,7 @@ export default function Home() {
 								</p>
 							</div>
 							<h2 className="text-white text-xl">
-								Reportify Website
+								Reportify Websitex
 							</h2>
 						</div>
 					</div>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import MainButton from "@/components/atoms/main-button";
 import SecondaryButton from "@/components/atoms/secondary-button";
 import PortfolioCard from "@/components/organisms/portfolio-card";
+import PortfolioCardDesktop from "@/components/organisms/portfolio-card-desktop";
 import ToolsMarquee from "@/components/molecules/tools-marquee";
 import Navbar from "@/components/organisms/navbar";
 import Footer from "@/components/organisms/footer";
@@ -263,185 +264,115 @@ export default function Home() {
 					</p>
 				</div>
 				<div className="flex flex-col lg:flex-row gap-16 lg:gap-7 mt-14 lg:mt-24">
-					<div className="w-full flex flex-col h-auto">
-						<div className="group w-full flex flex-col h-auto relative lg:cursor-pointer">
-							<div className="absolute z-50 flex gap-[10px] h-fit justify-end inset-0 px-4 lg:px-5 py-4 lg:py-5">
-								<div className="py-[6px] lg:py-2 rounded-full px-4 lg:px-[18px] bg-white bg-opacity-10">
-									<p className="text-sm text-white font-light">
-										Website
-									</p>
-								</div>
-								<div className="py-[6px] lg:py-2 rounded-full px-4 lg:px-[18px] bg-white bg-opacity-10">
-									<p className="text-sm text-white font-light">
-										Agency
-									</p>
-								</div>
-							</div>
-							<div className="hidden absolute z-40 w-full h-full inset-0 m-auto lg:block lg:group-hover:backdrop-blur-sm duration-200 transition-all ease-in-out">
-								<Link href="/case-study/petaniweb">
-									<div className="absolute hidden lg:group-hover:flex items-center justify-center z-50 w-24 h-24 rounded-full bg-secondary m-auto inset-0 duration-300 ease-in transition-all">
-										<ArrowTopRightIcon className="text-black w-10 h-10" />
-									</div>
-								</Link>
-							</div>
+					{/* <-- === Portfolio PetaniWeb Start === --> */}
+					<PortfolioCard
+						platform="Website"
+						category="Agency"
+						imageSrc={petaniweb}
+						alt="PetaniWeb Mockup"
+						link="/case-study/petaniweb"
+						year={2024}
+						role1="UI/UX Design"
+						role2="Development"
+						portfolioTitle="PetaniWeb Website"
+					/>
 
-							<Image
-								src={petaniweb}
-								alt="PetaniWeb Mockup"
-								priority={true}
-								className="w-full h-auto rounded-xl lg:rounded-3xl"
-							/>
-						</div>
+					<PortfolioCardDesktop
+						platform="Website"
+						category="Agency"
+						imageSrc={petaniweb}
+						alt="PetaniWeb Mockup"
+						link="/case-study/petaniweb"
+						year={2024}
+						role1="UI/UX Design"
+						role2="Development"
+						portfolioTitle="PetaniWeb Website"
+					/>
+					{/* <-- === Portfolio PetaniWeb End === --> */}
 
-						<div className="flex flex-col mt-6 lg:mt-7 gap-2 lg:gap-3">
-							<div className="flex items-center justify-start gap-2">
-								<p className="text-grey text-[15px] lg:text-[17px]">
-									2024
-								</p>
-								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px] lg:text-[17px]">
-									UI/UX Design
-								</p>
-								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px] lg:text-[17px]">
-									Development
-								</p>
-							</div>
-							<h2 className="text-white text-xl lg:text-2xl">
-								PetaniWeb Website
-							</h2>
-						</div>
+					{/* <-- === Portfolio Fixit Start === --> */}
+					<PortfolioCard
+						platform="Mobile App"
+						category="Branding"
+						imageSrc={fixit}
+						alt="Fixit Mockup"
+						link="/case-study/fixit"
+						year={2023}
+						role1="UI/UX Design"
+						role2="Research"
+						portfolioTitle="Fixit Mobile App"
+					/>
+
+					<div className="lg:pt-28 lg:w-full">
+						<PortfolioCardDesktop
+							platform="Mobile App"
+							category="Branding"
+							imageSrc={fixit}
+							alt="Fixit Mockup"
+							link="/case-study/fixit"
+							year={2023}
+							role1="UI/UX Design"
+							role2="Research"
+							portfolioTitle="Fixit Mobile App"
+						/>
 					</div>
-
-					<div className="w-full flex flex-col h-auto">
-						<div className="w-full h-auto lg:pt-28">
-							<div className="group w-full flex flex-col h-auto relative lg:cursor-pointer">
-								<div className="absolute z-50 flex gap-[10px] h-fit justify-end inset-0 px-4 lg:px-5 py-4 lg:py-5">
-									<div className="py-[6px] lg:py-2 rounded-full px-4 lg:px-[18px] bg-white bg-opacity-10">
-										<p className="text-sm text-white font-light">
-											Mobile App
-										</p>
-									</div>
-									<div className="py-[6px] lg:py-2 rounded-full px-4 lg:px-[18px] bg-white bg-opacity-10">
-										<p className="text-sm text-white font-light">
-											Branding
-										</p>
-									</div>
-								</div>
-								<div className="hidden absolute z-40 w-full h-full inset-0 m-auto lg:group-hover:block lg:group-hover:backdrop-blur-sm duration-300 transition-all ease-in-out">
-									<div className="absolute flex items-center justify-center z-50 w-24 h-24 rounded-full bg-secondary m-auto inset-0">
-										<ArrowTopRightIcon className="text-black w-10 h-10" />
-									</div>
-								</div>
-								<Image
-									src={fixit}
-									alt="Fixit Mockup"
-									priority={true}
-									className="w-full h-auto rounded-xl lg:rounded-3xl"
-								/>
-							</div>
-
-							<div className="flex flex-col mt-6 lg:mt-7 gap-2 lg:gap-3">
-								<div className="flex items-center justify-start gap-2">
-									<p className="text-grey text-[15px] lg:text-[17px]">
-										2023
-									</p>
-									<div className="w-1 h-1 rounded-full bg-grey"></div>
-									<p className="text-grey text-[15px] lg:text-[17px]">
-										UI/UX Design
-									</p>
-									<div className="w-1 h-1 rounded-full bg-grey"></div>
-									<p className="text-grey text-[15px] lg:text-[17px]">
-										Research
-									</p>
-								</div>
-								<h2 className="text-white text-xl lg:text-2xl">
-									Fixit Mobile App
-								</h2>
-							</div>
-						</div>
-					</div>
+					{/* <-- === Portfolio Fixit End === --> */}
 				</div>
 
-				<div className="flex flex-col gap-16 mt-16">
-					<div className="w-full flex flex-col h-auto">
-						<div className="w-full flex flex-col h-auto relative">
-							<div className="absolute flex gap-[10px] h-fit justify-end inset-0 px-4 py-4">
-								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
-									<p className="text-sm text-white font-light">
-										Website
-									</p>
-								</div>
-								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
-									<p className="text-sm text-white font-light">
-										SAAS
-									</p>
-								</div>
-							</div>
-							<Image
-								src={reportify}
-								alt="Reportify Mockup"
-								title="Reportify Mockup"
-								priority={true}
-								className="w-full h-auto rounded-xl"
-							/>
-						</div>
-						<div className="flex flex-col mt-6 gap-2">
-							<div className="flex items-center justify-start gap-2">
-								<p className="text-grey text-[15px]">2023</p>
-								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px]">
-									UI/UX Design
-								</p>
-								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px]">
-									Development
-								</p>
-							</div>
-							<h2 className="text-white text-xl">
-								Reportify Websitex
-							</h2>
-						</div>
+				<div className="flex flex-col lg:flex-row gap-16 lg:gap-7 mt-0 lg:mt-16">
+					{/* <-- === Portfolio Reportify Start === --> */}
+					<PortfolioCard
+						platform="Website"
+						category="SAAS"
+						imageSrc={reportify}
+						alt="Reportify Mockup"
+						link="/case-study/reportify"
+						year={2023}
+						role1="UI/UX Design"
+						role2="Development"
+						portfolioTitle="Reportify Website"
+					/>
+
+					<PortfolioCardDesktop
+						platform="Website"
+						category="SAAS"
+						imageSrc={reportify}
+						alt="Reportify Mockup"
+						link="/case-study/reportify"
+						year={2023}
+						role1="UI/UX Design"
+						role2="Development"
+						portfolioTitle="Reportify Website"
+					/>
+					{/* <-- === Portfolio Reportify End === --> */}
+
+					{/* <-- === Portfolio Aqua Start === --> */}
+					<PortfolioCard
+						platform="Mobile App"
+						category="Crypto"
+						imageSrc={fixit}
+						alt="AQUA Mockup"
+						link="/case-study/aqua"
+						year={2022}
+						role1="UI/UX Design"
+						role2="Research"
+						portfolioTitle="AQUA Mobile App"
+					/>
+
+					<div className="lg:pt-28 lg:w-full">
+						<PortfolioCardDesktop
+							platform="Mobile App"
+							category="Crypto"
+							imageSrc={fixit}
+							alt="AQUA Mockup"
+							link="/case-study/aqua"
+							year={2022}
+							role1="UI/UX Design"
+							role2="Research"
+							portfolioTitle="AQUA Mobile App"
+						/>
 					</div>
-					<div className="w-full flex flex-col h-auto">
-						<div className="w-full flex flex-col h-auto relative">
-							<div className="absolute flex gap-[10px] h-fit justify-end inset-0 px-4 py-4">
-								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
-									<p className="text-sm text-white font-light">
-										Mobile App
-									</p>
-								</div>
-								<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
-									<p className="text-sm text-white font-light">
-										Crypto
-									</p>
-								</div>
-							</div>
-							<Image
-								src={fixit}
-								alt="Fixit Mockup"
-								title="Fixit Mockup"
-								priority={true}
-								className="w-full h-auto rounded-xl"
-							/>
-						</div>
-						<div className="flex flex-col mt-6 gap-2">
-							<div className="flex items-center justify-start gap-2">
-								<p className="text-grey text-[15px]">2022</p>
-								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px]">
-									UI/UX Design
-								</p>
-								<div className="w-1 h-1 rounded-full bg-grey"></div>
-								<p className="text-grey text-[15px]">
-									Research
-								</p>
-							</div>
-							<h2 className="text-white text-xl">
-								AQUA Mobile App
-							</h2>
-						</div>
-					</div>
+					{/* <-- === Portfolio Aqua End === --> */}
 				</div>
 			</section>
 			{/* <-- ==== Portfolio Section End ==== --> */}

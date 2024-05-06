@@ -70,7 +70,7 @@ function Navbar() {
 	return (
 		<>
 			{/* <-- ==== Navbar Mobile Start ==== --> */}
-			<nav className="fixed flex w-full z-50 lg:hidden">
+			<nav className="fixed flex w-full z-[100] lg:hidden">
 				<div className="flex items-center w-full justify-between px-sectionpxsm py-4 bg-bgbase bg-opacity-20 backdrop-blur-xl">
 					<Link href="/">
 						<Image
@@ -99,11 +99,11 @@ function Navbar() {
 
 			{/* <-- ==== Navbar Open Start ==== --> */}
 			<div
-				className={`fixed w-full h-screen z-40 lg:hidden
+				className={`fixed w-full h-screen z-[80] lg:hidden
             ${
 				isOpen
-					? "top-0 left-0 transition-all duration-700 ease-in-out"
-					: "-top-full left-0 transition-all duration-700 ease-in-out"
+					? "top-0 left-0 transition-all duration-[600ms] ease-in-out"
+					: "-top-full left-0 transition-all duration-[600ms] ease-in-out"
 			}`}
 			>
 				<div className="w-full flex flex-col h-full bg-bgbase bg-opacity-60 backdrop-blur-xl px-sectionpxsm pb-20 pt-32 justify-between items-start">
@@ -214,7 +214,7 @@ function Navbar() {
 			{/* <-- ==== Navbar Mobile End ==== --> */}
 
 			{/* <-- ==== Navbar Desktop Start ==== --> */}
-			<nav className="hidden lg:flex fixed w-full px-sectionpxlg 2xl:px-sectionpx2xl bg-bgbase bg-opacity-25 backdrop-blur-2xl z-50 py-5 items-center justify-between">
+			<nav className="hidden lg:flex fixed w-full px-sectionpxlg 2xl:px-sectionpx2xl bg-bgbase bg-opacity-25 backdrop-blur-2xl z-[100] py-5 items-center justify-between">
 				<Link href="/">
 					<Image
 						src={logo}
@@ -224,21 +224,8 @@ function Navbar() {
 						className="h-7 w-auto"
 					/>
 				</Link>
+
 				{/* <-- === Navbar Desktop Links Start === --> */}
-				{/* <div className="flex items-center justify-center gap-9">
-						{navLinks.map((link, index) => (
-							<div
-								key={index}
-								className="text-[15px] hover:text-secondary duration-300 transition-all ease-in-out text-white cursor-pointer"
-							>
-								<NavItem
-									key={index}
-									text={link.text}
-									path={link.path}
-								/>
-							</div>
-						))}
-					</div> */}
 				<div className="flex items-center justify-center rounded-full border border-white border-opacity-10 gap-1 p-[6px]">
 					<Link href="/about">
 						<div className="flex items-center justify-center px-5 rounded-full bg-inherit py-[10px] hover:bg-white hover:bg-opacity-[0.07] duration-300 cursor-pointer">

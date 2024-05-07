@@ -7,12 +7,12 @@ import SecondaryButton from "@/components/atoms/secondary-button";
 import PortfolioCard from "@/components/organisms/portfolio-card";
 import PortfolioCardDesktop from "@/components/organisms/portfolio-card-desktop";
 import ToolsMarquee from "@/components/molecules/tools-marquee";
+import ToolsMarqueeDesktop from "@/components/molecules/tools-marquee-desktop";
 import Navbar from "@/components/organisms/navbar";
 import Footer from "@/components/organisms/footer";
 
 // Import Icons //
 import { Rocket } from "lucide-react";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 // Import Assets //
 import sparkle from "@/assets/images/img-sparkle.svg";
@@ -108,7 +108,7 @@ export default function Home() {
 							What do I do
 						</p>
 					</div>
-					<h1 className="text-4xl lg:text-6xl lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
+					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
 						No limitation. No stagnation.
 						<br className="hidden lg:block" /> No comfort-zone.
 					</h1>
@@ -122,7 +122,7 @@ export default function Home() {
 						<h1 className="text-white text-xl lg:text-[21px] font-medium">
 							UI/UX Designer
 						</h1>
-						<p className="text-grey text-sm lg:text-[15px] mt-3 lg:mt-4 leading-relaxed">
+						<p className="text-grey text-[15px] mt-3 lg:mt-4 leading-relaxed">
 							From strategy to delivering results, I am the
 							architect of crafting digital products.
 						</p>
@@ -131,7 +131,7 @@ export default function Home() {
 						<h1 className="text-white text-xl lg:text-[21px] font-medium">
 							Front-end Developer
 						</h1>
-						<p className="text-grey text-sm lg:text-[15px] mt-3 lg:mt-4 leading-relaxed">
+						<p className="text-grey text-[15px] mt-3 lg:mt-4 leading-relaxed">
 							I might not be an expert. But, I am able to
 							translate design into living web magic.
 						</p>
@@ -140,7 +140,7 @@ export default function Home() {
 						<h1 className="text-white text-xl lg:text-[21px] font-medium">
 							No-code Developer
 						</h1>
-						<p className="text-grey text-sm lg:text-[15px] mt-3 lg:mt-4 leading-relaxed">
+						<p className="text-grey text-[15px] mt-3 lg:mt-4 leading-relaxed">
 							Anything can be built with seamless user-interface
 							and its functions in one canvas.
 						</p>
@@ -253,7 +253,7 @@ export default function Home() {
 							Selected works
 						</p>
 					</div>
-					<h1 className="text-4xl lg:text-6xl lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
+					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
 						Driven by creating
 						<br className="hidden lg:block" /> next-level digital
 						products
@@ -303,7 +303,7 @@ export default function Home() {
 						portfolioTitle="Fixit Mobile App"
 					/>
 
-					<div className="lg:pt-28 lg:w-full">
+					<div className="lg:pt-32 lg:w-full">
 						<PortfolioCardDesktop
 							platform="Mobile App"
 							category="Branding"
@@ -359,7 +359,7 @@ export default function Home() {
 						portfolioTitle="AQUA Mobile App"
 					/>
 
-					<div className="lg:pt-28 lg:w-full">
+					<div className="lg:pt-32 lg:w-full">
 						<PortfolioCardDesktop
 							platform="Mobile App"
 							category="Crypto"
@@ -378,26 +378,31 @@ export default function Home() {
 			{/* <-- ==== Portfolio Section End ==== --> */}
 
 			{/* <-- ==== Tech-stack Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-60">
+			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-52 lg:pt-72">
 				<div className="flex flex-col items-center justify-center">
-					<div className="bg-secondary py-[5px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
+					<div className="bg-secondary py-[5px] lg:py-[6px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 						<p className="text-sm font-medium tracking-tight text-black">
 							Tools & Tech-stacks
 						</p>
 					</div>
-					<h1 className="text-4xl text-center mt-7 text-white">
-						Crafting beauty in pixels, weaving magic in code
+					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
+						Crafting beauty in pixels, weaving
+						<br className="hidden lg:block" />
+						magic in code
 					</h1>
-					<p className="text-grey text-base font-light text-center mt-7">
+					<p className="text-grey text-base lg:text-[19px] font-light text-center mt-7 lg:mt-10">
 						Agile and adaptable, from project planning, crafting
 						interfaces to diving into intricade code.
 					</p>
 				</div>
 			</section>
-			<div className="mt-14">
+			<div className="mt-14 lg:hidden">
 				<ToolsMarquee />
 			</div>
-			<section className="px-sectionpxsm pt-20">
+			<div className="mt-20 hidden lg:block lg:px-sectionpxlg 2xl:px-sectionpx2xl">
+				<ToolsMarqueeDesktop />
+			</div>
+			<section className="px-sectionpxsm pt-20 lg:pt-24">
 				<div className="flex items-center justify-center gap-5">
 					<div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-neutral-500"></div>
 					<p className="text-base text-grey font-light text-center">
@@ -409,7 +414,7 @@ export default function Home() {
 			{/* <-- ==== Tech-stack Section End ==== --> */}
 
 			{/* <-- ==== Footer Start ==== --> */}
-			<section className="mt-44">
+			<section className="mt-44 lg:mt-72">
 				<Footer />
 			</section>
 			{/* <-- ==== Footer End ==== --> */}

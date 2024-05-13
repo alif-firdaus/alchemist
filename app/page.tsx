@@ -4,12 +4,14 @@ import Image from "next/image";
 // Import Components //
 import MainButton from "@/components/atoms/main-button";
 import SecondaryButton from "@/components/atoms/secondary-button";
+import TextButton from "@/components/atoms/text-button";
 import PortfolioCard from "@/components/organisms/portfolio-card";
 import PortfolioCardDesktop from "@/components/organisms/portfolio-card-desktop";
 import ToolsMarquee from "@/components/molecules/tools-marquee";
 import ToolsMarqueeDesktop from "@/components/molecules/tools-marquee-desktop";
 import Navbar from "@/components/organisms/navbar";
 import Footer from "@/components/organisms/footer";
+import FooterDesktop from "@/components/organisms/footer-desktop";
 
 // Import Icons //
 import { Rocket } from "lucide-react";
@@ -28,6 +30,7 @@ export default function Home() {
 		<>
 			{/* <-- ==== Navbar Start ==== --> */}
 			<Navbar />
+
 			{/* <-- ==== Navbar End ==== --> */}
 
 			{/* <-- ==== Hero Section Start ==== --> */}
@@ -51,15 +54,15 @@ export default function Home() {
 								Elevating products into perfection
 							</p>
 						</div>
-						<h1 className="text-[46px] lg:text-[70px] leading-[1.15] mt-7 lg:mt-8 text-white">
+						<h1 className="text-[46px] lg:text-[68px] leading-[1.14] mt-7 lg:mt-8 text-white">
 							Stand out as
 							<br />
 							your passionate
 							<br />
 							pixel crafter
 						</h1>
-						{/* <-- === Schedule a Call Button Start === --> */}
-						<div className="mt-12 lg:mt-14">
+						{/* <-- === CTA Button Start === --> */}
+						<div className="mt-12 lg:mt-14 flex items-center gap-7 lg:gap-[34px]">
 							<Link
 								href="https://calendly.com/aliffirdaus-discussion/project-discussion"
 								target="_blank"
@@ -72,9 +75,21 @@ export default function Home() {
 									fontWeight=""
 								/>
 							</Link>
+
+							<Link
+								href="https://dribbble.com/aliffirdaus"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<TextButton
+									text="Works quality"
+									textColor=""
+									fontWeight=""
+								/>
+							</Link>
 						</div>
 					</div>
-					{/* <-- === Schedule a Call Button End === --> */}
+					{/* <-- === CTA Button End === --> */}
 
 					<div className="mt-24 lg:mt-auto">
 						<Rocket color="#F6F6F6" size={28} strokeWidth={1} />
@@ -150,7 +165,7 @@ export default function Home() {
 			{/* <-- ==== Expertise Section End ==== --> */}
 
 			{/* <-- ==== About Section Start ==== --> */}
-			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl mt-44 lg:mt-64 pt-28 lg:pt-36 pb-32 lg:pb-48 bg-darkgrey">
+			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl mt-44 lg:mt-64 pt-24 lg:pt-32 pb-32 lg:pb-48 bg-darkgrey rounded-t-3xl lg:rounded-t-[34px]">
 				<div className="bg-secondary py-[5px] lg:py-[6px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 					<p className="text-sm font-medium tracking-tight text-black">
 						Who I am
@@ -168,7 +183,8 @@ export default function Home() {
 								over 3 years
 							</span>
 						</h1>
-						<div className="mt-10 lg:mt-12 flex flex-col lg:flex-row gap-4">
+						{/* <-- ==== CTA Button About Start ==== --> */}
+						<div className="mt-10 lg:mt-14 flex gap-6 lg:gap-[34px] flex-wrap lg:flex-nowrap">
 							<Link
 								href="https://calendly.com/aliffirdaus-discussion/project-discussion"
 								target="_blank"
@@ -180,11 +196,13 @@ export default function Home() {
 									textColor=""
 								/>
 							</Link>
-							<SecondaryButton
+							<TextButton
 								text="Download Resume"
+								textColor=""
 								fontWeight=""
 							/>
 						</div>
+						{/* <-- ==== CTA Button About Start ==== --> */}
 					</div>
 					<div className="flex flex-col mt-14 lg:mt-0 lg:w-full lg:items-end">
 						<div className="lg:w-5/6">
@@ -254,7 +272,7 @@ export default function Home() {
 						</p>
 					</div>
 					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
-						Driven by creating
+						Driven by creating the
 						<br className="hidden lg:block" /> next-level digital
 						products
 					</h1>
@@ -416,6 +434,7 @@ export default function Home() {
 			{/* <-- ==== Footer Start ==== --> */}
 			<section className="mt-44 lg:mt-72">
 				<Footer />
+				<FooterDesktop />
 			</section>
 			{/* <-- ==== Footer End ==== --> */}
 		</>

@@ -7,6 +7,7 @@ import Image from "next/image";
 // Import Components //
 import MainButton from "../atoms/main-button";
 import SecondaryButtonDesktop from "../atoms/secondary-button-desktop";
+import TextButton from "../atoms/text-button";
 
 // Import Radix Icons //
 import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
@@ -130,16 +131,18 @@ function Navbar() {
 						{/* <-- === Navbar Links End === --> */}
 
 						{/* <-- === Connect Button Start === --> */}
-						<Link href="/connect">
-							<div className="mt-12">
+
+						<div className="mt-12">
+							<Link href="/connect">
 								<MainButton
-									text="Connect"
+									text="Let's connect"
 									bgColor=""
 									textColor=""
 									fontWeight=""
 								/>
-							</div>
-						</Link>
+							</Link>
+						</div>
+
 						{/* <-- === Connect Button End === --> */}
 					</div>
 

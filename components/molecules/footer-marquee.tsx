@@ -12,24 +12,43 @@ export default function FooterMarquee() {
 		>
 			<div className="flex items-center justify-center gap-2 mx-5">
 				<CheckIcon className="w-5 h-auto text-grey" />
-				<p className="text-[15px] text-white font-light">
-					Collaborative
-				</p>
+				<p className="text-base text-white font-light">Collaborative</p>
 			</div>
 			<div className="flex items-center justify-center gap-2 mx-5">
 				<CheckIcon className="w-5 h-auto text-grey" />
-				<p className="text-[15px] text-white font-light">
+				<p className="text-base text-white font-light">
 					Result-oriented
 				</p>
 			</div>
 			<div className="flex items-center justify-center gap-2 mx-5">
 				<CheckIcon className="w-5 h-auto text-grey" />
-				<p className="text-[15px] text-white font-light">Team Player</p>
+				<p className="text-base text-white font-light">Team Player</p>
 			</div>
 			<div className="flex items-center justify-center gap-2 mx-5">
 				<CheckIcon className="w-5 h-auto text-grey" />
-				<p className="text-[15px] text-white font-light">
-					Pixel-perfectionist
+				<p className="text-base text-white font-light">
+					Pixel Perfectionist
+				</p>
+			</div>
+
+			<div className="flex items-center justify-center gap-2 mx-5">
+				<CheckIcon className="w-5 h-auto text-grey" />
+				<p className="text-base text-white font-light">Collaborative</p>
+			</div>
+			<div className="flex items-center justify-center gap-2 mx-5">
+				<CheckIcon className="w-5 h-auto text-grey" />
+				<p className="text-base text-white font-light">
+					Result-oriented
+				</p>
+			</div>
+			<div className="flex items-center justify-center gap-2 mx-5">
+				<CheckIcon className="w-5 h-auto text-grey" />
+				<p className="text-base text-white font-light">Team Player</p>
+			</div>
+			<div className="flex items-center justify-center gap-2 mx-5">
+				<CheckIcon className="w-5 h-auto text-grey" />
+				<p className="text-base text-white font-light">
+					Pixel Perfectionist
 				</p>
 			</div>
 		</Marquee>

@@ -56,13 +56,13 @@ export default function Home() {
 						</div>
 						<h1 className="text-[46px] lg:text-[68px] leading-[1.14] mt-7 lg:mt-8 text-white">
 							Stand out as
-							<br />
+							<span className="font-number"></span> <br />
 							your passionate
 							<br />
 							pixel crafter
 						</h1>
 						{/* <-- === CTA Button Start === --> */}
-						<div className="mt-12 lg:mt-14 flex items-center gap-7 lg:gap-[34px]">
+						<div className="mt-12 lg:mt-14 flex items-center gap-6 lg:gap-[34px]">
 							<Link
 								href="https://calendly.com/aliffirdaus-discussion/project-discussion"
 								target="_blank"
@@ -184,23 +184,32 @@ export default function Home() {
 							</span>
 						</h1>
 						{/* <-- ==== CTA Button About Start ==== --> */}
-						<div className="mt-10 lg:mt-14 flex gap-6 lg:gap-[34px] flex-wrap lg:flex-nowrap">
-							<Link
-								href="https://calendly.com/aliffirdaus-discussion/project-discussion"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+						<div className="mt-10 lg:mt-14 flex">
+							<div className="hidden lg:flex lg:gap-[34px]">
+								<Link
+									href="https://calendly.com/aliffirdaus-discussion/project-discussion"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<MainButton
+										text="Schedule a call"
+										bgColor=""
+										textColor=""
+									/>
+								</Link>
+								<TextButton
+									text="Download Resume"
+									textColor=""
+									fontWeight=""
+								/>
+							</div>
+							<div className="block lg:hidden">
 								<MainButton
-									text="Schedule a call"
+									text="Download Resume"
 									bgColor=""
 									textColor=""
 								/>
-							</Link>
-							<TextButton
-								text="Download Resume"
-								textColor=""
-								fontWeight=""
-							/>
+							</div>
 						</div>
 						{/* <-- ==== CTA Button About Start ==== --> */}
 					</div>

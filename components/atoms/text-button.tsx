@@ -12,7 +12,7 @@ const TextButton = ({ text, textColor, fontWeight }: TextButtonProps) => {
 	const fontWeightClass = fontWeight ? `font-${fontWeight}` : "";
 
 	return (
-		<button className="group flex w-fit items-center justify-center pt-[9px] pb-[12px] lg:pt-[14px] lg:pb-4 gap-[10px] lg:hover:gap-3 lg:duration-300">
+		<button className="group flex w-fit items-center justify-center pt-[9px] pb-[11px] lg:pt-[14px] lg:pb-4 gap-[10px] lg:hover:gap-3 lg:duration-300">
 			<p className={`text-base ${textColorClass} ${fontWeightClass}`}>
 				{text}
 			</p>

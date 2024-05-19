@@ -20,7 +20,7 @@ const MainButton = ({
 
 	return (
 		<button
-			className={`${bgColorClass} group flex w-fit items-center justify-center pt-[9px] pb-[12px] lg:pt-3 lg:pb-[14px] rounded-full pl-6 pr-5 lg:pl-[30px] lg:pr-[26px] gap-[10px] lg:hover:bg-[#6431F5] lg:hover:gap-3 lg:duration-300`}
+			className={`${bgColorClass} group flex w-fit items-center justify-center pt-[9px] pb-[11px] lg:pt-3 lg:pb-[14px] rounded-full pl-6 pr-5 lg:pl-[30px] lg:pr-[26px] gap-[10px] lg:hover:bg-[#6431F5] lg:hover:gap-3 lg:duration-300`}
 		>
 			<p className={`text-base ${textColorClass} ${fontWeightClass}`}>
 				{text}

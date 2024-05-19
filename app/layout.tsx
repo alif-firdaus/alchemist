@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
+import { Raleway, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const raleway = Raleway({ subsets: ["latin"] });
+const mainFont = Raleway({
+	subsets: ["latin"],
+	variable: "--main-font",
+});
+const numberFont = Plus_Jakarta_Sans({
+	subsets: ["latin"],
+	variable: "--number-font",
+});
 
 export const metadata: Metadata = {
 	title: "Alchemist",
@@ -17,7 +24,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={`scroll-smooth ${raleway.className}`}>
+		<html
+			lang="en"
+			className={`scroll-smooth ${mainFont.variable} ${numberFont.variable}`}
+		>
 			<body className="bg-bgbase">{children}</body>
 		</html>
 	);

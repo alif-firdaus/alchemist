@@ -9,6 +9,10 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				number: "var(--number-font)",
+			},
+
 			colors: {
 				bgbase: "#0E0F11",
 				primary: "#7B4DFC",
@@ -20,7 +24,7 @@ const config: Config = {
 			},
 			padding: {
 				// sm //
-				sectionpxsm: "22px",
+				sectionpxsm: "20px",
 				// md //
 				// lg //
 				sectionpxlg: "120px",

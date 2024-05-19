@@ -7,13 +7,12 @@ import Image from "next/image";
 // Import Components //
 import MainButton from "../atoms/main-button";
 import SecondaryButtonDesktop from "../atoms/secondary-button-desktop";
-import TextButton from "../atoms/text-button";
 
 // Import Radix Icons //
 import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
 
 // Import Assets //
-import logo from "@/assets/images/img-logo.webp";
+import logo from "@/assets/images/img-logotype.webp";
 import dribbble from "@/assets/images/img-dribbble.webp";
 import linkedin from "@/assets/images/img-linkedin.webp";
 import twitter from "@/assets/images/img-twitter.webp";
@@ -74,13 +73,15 @@ function Navbar() {
 			<nav className="fixed flex w-full z-[100] lg:hidden">
 				<div className="flex items-center w-full justify-between px-sectionpxsm py-4 bg-bgbase bg-opacity-20 backdrop-blur-xl">
 					<Link href="/">
-						<Image
-							src={logo}
-							alt="Alchemist Logo"
-							title="Alchemist Logo"
-							priority={true}
-							className="h-7 w-auto"
-						/>
+						<div className="w-fit h-fit pb-[2px]">
+							<Image
+								src={logo}
+								alt="Alchemist Logo"
+								title="Alchemist Logo"
+								priority={true}
+								className="h-5 w-auto"
+							/>
+						</div>
 					</Link>
 
 					{/* <-- === Navbar Toggle === --> */}
@@ -107,7 +108,7 @@ function Navbar() {
 					: "-top-full left-0 transition-all duration-[600ms] ease-in-out"
 			}`}
 			>
-				<div className="w-full flex flex-col h-full bg-bgbase bg-opacity-60 backdrop-blur-xl px-sectionpxsm pb-20 pt-32 justify-between items-start">
+				<div className="w-full flex flex-col h-full bg-bgbase bg-opacity-60 backdrop-blur-xl px-sectionpxsm pb-24 pt-32 justify-between items-start">
 					<div className="flex flex-col w-full">
 						<div className="mb-6 flex items-center gap-[14px]">
 							<div className="w-[6px] h-[6px] bg-secondary rounded-full"></div>

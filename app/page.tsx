@@ -62,7 +62,7 @@ export default function Home() {
 							pixel crafter
 						</h1>
 						{/* <-- === CTA Button Start === --> */}
-						<div className="mt-12 lg:mt-14 flex items-center gap-6 lg:gap-[34px]">
+						<div className="mt-12 lg:mt-14 flex items-center gap-6 lg:gap-[36px]">
 							<Link
 								href="https://calendly.com/aliffirdaus-discussion/project-discussion"
 								target="_blank"
@@ -165,7 +165,7 @@ export default function Home() {
 			{/* <-- ==== Expertise Section End ==== --> */}
 
 			{/* <-- ==== About Section Start ==== --> */}
-			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl mt-44 lg:mt-64 pt-24 lg:pt-32 pb-32 lg:pb-48 bg-darkgrey rounded-t-3xl lg:rounded-t-[34px]">
+			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl mt-44 lg:mt-64 pt-[70px] lg:pt-32 pb-32 lg:pb-48 bg-darkgrey rounded-t-3xl lg:rounded-t-[34px]">
 				<div className="bg-secondary py-[5px] lg:py-[6px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 					<p className="text-sm font-medium tracking-tight text-black">
 						Who I am
@@ -185,7 +185,7 @@ export default function Home() {
 						</h1>
 						{/* <-- ==== CTA Button About Start ==== --> */}
 						<div className="mt-10 lg:mt-14 flex">
-							<div className="hidden lg:flex lg:gap-[34px]">
+							<div className="hidden lg:flex lg:gap-[36px]">
 								<Link
 									href="https://calendly.com/aliffirdaus-discussion/project-discussion"
 									target="_blank"
@@ -197,18 +197,32 @@ export default function Home() {
 										textColor=""
 									/>
 								</Link>
-								<TextButton
-									text="Download Resume"
-									textColor=""
-									fontWeight=""
-								/>
+								<Link
+									href="./aliffirdaus-resume.pdf"
+									download="aliffirdaus-resume"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<TextButton
+										text="Download Resume"
+										textColor=""
+										fontWeight=""
+									/>
+								</Link>
 							</div>
 							<div className="block lg:hidden">
-								<MainButton
-									text="Download Resume"
-									bgColor=""
-									textColor=""
-								/>
+								<Link
+									href="./aliffirdaus-resume.pdf"
+									download="aliffirdaus-resume"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<MainButton
+										text="Download Resume"
+										bgColor=""
+										textColor=""
+									/>
+								</Link>
 							</div>
 						</div>
 						{/* <-- ==== CTA Button About Start ==== --> */}

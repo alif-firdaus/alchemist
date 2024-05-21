@@ -19,7 +19,7 @@ const config: Config = {
 				secondary: "#CFFF71",
 				black: "#171717",
 				grey: "#818181",
-				darkgrey: "#151618",
+				darkgrey: "#19191C",
 				white: "#F6F6F6",
 			},
 			padding: {

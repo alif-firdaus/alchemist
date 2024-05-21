@@ -220,13 +220,15 @@ function Navbar() {
 			{/* <-- ==== Navbar Desktop Start ==== --> */}
 			<nav className="hidden lg:flex fixed w-full px-sectionpxlg 2xl:px-sectionpx2xl bg-bgbase bg-opacity-25 backdrop-blur-2xl z-[100] py-5 items-center justify-between">
 				<Link href="/">
-					<Image
-						src={logo}
-						alt="Alchemist Logo"
-						title="Alchemist Logo"
-						priority={true}
-						className="h-7 w-auto"
-					/>
+					<div className="w-fit h-fit pb-[2px]">
+						<Image
+							src={logo}
+							alt="Alchemist Logo"
+							title="Alchemist Logo"
+							priority={true}
+							className="h-5 w-auto"
+						/>
+					</div>
 				</Link>
 
 				{/* <-- === Navbar Desktop Links Start === --> */}

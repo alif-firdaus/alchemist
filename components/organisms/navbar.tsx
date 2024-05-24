@@ -47,6 +47,11 @@ function Navbar() {
 		setOpen((prevOpen) => !prevOpen);
 	};
 
+	// Close menu when navigating //
+	const closeMenu = () => {
+		setOpen(false);
+	};
+
 	// External Link Path //
 	interface NavItemProps {
 		text: string;
@@ -58,12 +63,21 @@ function Navbar() {
 
 		if (isExternalLink) {
 			return (
-				<Link href={path} target="_blank" rel="noopener noreferrer">
+				<Link
+					href={path}
+					target="_blank"
+					rel="noopener noreferrer"
+					onClick={closeMenu}
+				>
 					{text}
 				</Link>
 			);
 		} else {
-			return <Link href={path}>{text}</Link>;
+			return (
+				<Link href={path} onClick={closeMenu}>
+					{text}
+				</Link>
+			);
 		}
 	};
 
@@ -104,8 +118,8 @@ function Navbar() {
 				className={`fixed w-full h-screen z-[80] lg:hidden
             ${
 				isOpen
-					? "top-0 left-0 transition-all duration-[600ms] ease-in-out"
-					: "-top-full left-0 transition-all duration-[600ms] ease-in-out"
+					? "top-0 left-0 transition-all duration-500 ease-in-out"
+					: "-top-full left-0 transition-all duration-500 ease-in-out"
 			}`}
 			>
 				<div className="w-full flex flex-col h-full bg-bgbase bg-opacity-60 backdrop-blur-xl px-sectionpxsm pb-24 pt-32 justify-between items-start">
@@ -134,7 +148,7 @@ function Navbar() {
 						{/* <-- === Connect Button Start === --> */}
 
 						<div className="mt-12">
-							<Link href="/connect">
+							<Link href="/connect" onClick={closeMenu}>
 								<MainButton
 									text="Let's connect"
 									bgColor=""

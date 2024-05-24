@@ -3,15 +3,11 @@ import Image from "next/image";
 
 // Import Components //
 import MainButton from "@/components/atoms/main-button";
-import SecondaryButton from "@/components/atoms/secondary-button";
 import TextButton from "@/components/atoms/text-button";
 import PortfolioCard from "@/components/organisms/portfolio-card";
 import PortfolioCardDesktop from "@/components/organisms/portfolio-card-desktop";
 import ToolsMarquee from "@/components/molecules/tools-marquee";
 import ToolsMarqueeDesktop from "@/components/molecules/tools-marquee-desktop";
-import Navbar from "@/components/organisms/navbar";
-import Footer from "@/components/organisms/footer";
-import FooterDesktop from "@/components/organisms/footer-desktop";
 
 // Import Icons //
 import { Rocket } from "lucide-react";
@@ -28,11 +24,6 @@ import reportify from "@/assets/images/img-reportify.webp";
 export default function Home() {
 	return (
 		<>
-			{/* <-- ==== Navbar Start ==== --> */}
-			<Navbar />
-
-			{/* <-- ==== Navbar End ==== --> */}
-
 			{/* <-- ==== Hero Section Start ==== --> */}
 			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-36 lg:pt-52 flex flex-col lg:flex-row lg:h-fit">
 				<div className="flex flex-col justify-center lg:w-full lg:justify-between">
@@ -443,7 +434,7 @@ export default function Home() {
 			<div className="mt-20 hidden lg:block lg:px-sectionpxlg 2xl:px-sectionpx2xl">
 				<ToolsMarqueeDesktop />
 			</div>
-			<section className="px-sectionpxsm pt-20 lg:pt-24">
+			<section className="px-sectionpxsm pt-20 lg:pt-24 mb-44 lg:mb-72">
 				<div className="flex items-center justify-center gap-5">
 					<div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-neutral-500"></div>
 					<p className="text-base text-grey font-light text-center">
@@ -453,13 +444,6 @@ export default function Home() {
 				</div>
 			</section>
 			{/* <-- ==== Tech-stack Section End ==== --> */}
-
-			{/* <-- ==== Footer Start ==== --> */}
-			<section className="mt-44 lg:mt-72">
-				<Footer />
-				<FooterDesktop />
-			</section>
-			{/* <-- ==== Footer End ==== --> */}
 		</>
 	);
 }

@@ -25,7 +25,7 @@ export default function Home() {
 	return (
 		<>
 			{/* <-- ==== Hero Section Start ==== --> */}
-			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-36 lg:pt-52 flex flex-col lg:flex-row lg:h-fit">
+			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-36 lg:pt-48 flex flex-col lg:flex-row lg:h-fit">
 				<div className="flex flex-col justify-center lg:w-full lg:justify-between">
 					<div className="lg:h-full lg:flex lg:flex-col">
 						<div className="border border-white border-opacity-15 w-fit rounded-full flex gap-[14px] pl-[6px] pr-5 py-[6px] items-center justify-center">
@@ -67,17 +67,19 @@ export default function Home() {
 								/>
 							</Link>
 
-							<Link
-								href="https://dribbble.com/aliffirdaus"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<TextButton
-									text="Works quality"
-									textColor=""
-									fontWeight=""
-								/>
-							</Link>
+							<div className="hidden lg:block">
+								<Link
+									href="https://dribbble.com/aliffirdaus"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<TextButton
+										text="Works quality"
+										textColor=""
+										fontWeight=""
+									/>
+								</Link>
+							</div>
 						</div>
 					</div>
 					{/* <-- === CTA Button End === --> */}

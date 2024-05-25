@@ -19,13 +19,21 @@ const MainButton = ({
 	const fontWeightClass = fontWeight ? `font-${fontWeight}` : "";
 
 	return (
-		<button
-			className={`${bgColorClass} group flex w-fit items-center justify-center pt-[9px] pb-[11px] lg:pt-3 lg:pb-[14px] rounded-full pl-6 pr-5 lg:pl-[30px] lg:pr-[26px] gap-[10px] lg:hover:bg-[#6431F5] lg:hover:gap-3 lg:duration-300`}
-		>
-			<p className={`text-base ${textColorClass} ${fontWeightClass}`}>
-				{text}
-			</p>
-			<ArrowTopRightIcon className="h-4 w-4 text-white lg:group-hover:rotate-45 lg:duration-300" />
+		<button className="group flex w-fit">
+			<div
+				className={`${bgColorClass} flex items-center justify-center pt-[11px] pb-[13px] lg:pt-[14px] lg:pb-4 rounded-full px-6 lg:px-7 lg:group-hover:bg-[#6431F5] lg:duration-300`}
+			>
+				<p
+					className={`text-base leading-none ${textColorClass} ${fontWeightClass}`}
+				>
+					{text}
+				</p>
+			</div>
+			<div
+				className={`${bgColorClass} items-center justify-center -ml-[2px] lg:-ml-[6px] lg:group-hover:ml-0 pt-[11px] pb-[13px] lg:pt-[14px] lg:pb-4 px-3 lg:px-4 rounded-full lg:group-hover:bg-[#6431F5] lg:duration-300`}
+			>
+				<ArrowTopRightIcon className="h-4 w-4 text-white lg:group-hover:rotate-45 lg:duration-300" />
+			</div>
 		</button>
 	);
 };

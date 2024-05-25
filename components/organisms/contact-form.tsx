@@ -118,12 +118,13 @@ export default function ContactForm() {
 				</div>
 				{/* <-- === Message End === --> */}
 
-				<button
-					type="submit"
-					className="bg-primary mt-2 lg:mt-3 group flex w-fit items-center text-base text-white justify-center pt-[9px] pb-[11px] lg:pt-3 lg:pb-[14px] rounded-full pl-6 pr-5 lg:pl-[30px] lg:pr-[26px] gap-[10px] lg:hover:bg-[#6431F5] lg:hover:gap-3 lg:duration-300"
-				>
-					{isSubmitting ? "Wait a sec..." : "Send message"}
-					<ArrowTopRightIcon className="h-4 w-4 text-white lg:group-hover:rotate-45 lg:duration-300" />
+				<button type="submit" className="group flex mt-1 w-fit">
+					<div className="bg-primary flex w-fit items-center justify-center pt-[11px] pb-[13px] lg:pt-[14px] lg:pb-4 rounded-full px-6 lg:px-7 lg:group-hover:bg-[#6431F5] lg:duration-300 text-base text-white leading-none">
+						{isSubmitting ? "Wait a sec..." : "Send message"}
+					</div>
+					<div className="bg-primary items-center justify-center -ml-[2px] lg:-ml-[6px] lg:group-hover:ml-0 pt-[11px] pb-[13px] lg:pt-[14px] lg:pb-4 px-3 lg:px-4 rounded-full lg:group-hover:bg-[#6431F5] lg:duration-300">
+						<ArrowTopRightIcon className="h-4 w-4 text-white lg:group-hover:rotate-45 lg:duration-300" />
+					</div>
 				</button>
 			</form>
 		</div>

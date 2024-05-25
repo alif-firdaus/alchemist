@@ -13,13 +13,17 @@ const SecondaryButtonDesktop = ({
 	const fontWeightClass = fontWeight ? `font-${fontWeight}` : "";
 
 	return (
-		<button className="group flex w-fit items-center justify-center pt-3 pb-[14px] border border-white border-opacity-15 rounded-full pl-[26px] pr-[22px] gap-[10px] hover:bg-white duration-500 ease-in-out">
-			<p
-				className={`text-sm text-white group-hover:text-black group-hover:font-medium ${fontWeightClass}`}
-			>
-				{text}
-			</p>
-			<ArrowTopRightIcon className="h-4 w-4 text-white group-hover:text-black group-hover:rotate-45 duration-300" />
+		<button className="group flex w-fit">
+			<div className="flex items-center justify-center pt-[11px] pb-[13px] bg-white rounded-full px-6">
+				<p
+					className={`text-sm leading-none text-black font-medium ${fontWeightClass}`}
+				>
+					{text}
+				</p>
+			</div>
+			<div className="flex items-center justify-center -ml-1 pt-[11px] pb-[13px] px-3 bg-white rounded-full">
+				<ArrowTopRightIcon className="h-4 w-4 text-black group-hover:rotate-45 duration-300" />
+			</div>
 		</button>
 	);
 };

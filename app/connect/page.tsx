@@ -3,7 +3,7 @@ import ContactForm from "@/components/organisms/contact-form";
 
 export default function Connect() {
 	return (
-		<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-32 lg:pt-52 pb-44 lg:pb-48">
+		<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-32 lg:pt-48 pb-44 lg:pb-48">
 			<div className="flex flex-col items-start justify-center">
 				<div className="bg-secondary py-[5px] lg:py-[6px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 					<p className="text-sm font-medium tracking-tight text-black">

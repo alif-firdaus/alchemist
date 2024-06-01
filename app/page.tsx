@@ -45,7 +45,7 @@ export default function Home() {
 								Elevating products into perfection
 							</p>
 						</div>
-						<h1 className="text-[46px] lg:text-[68px] leading-[1.14] mt-7 lg:mt-8 text-white">
+						<h1 className="text-[46px] lg:text-7xl leading-[1.14] lg:leading-[1.16] mt-7 lg:mt-8 text-white">
 							Stand out as
 							<span className="font-number"></span> <br />
 							your passionate
@@ -127,28 +127,28 @@ export default function Home() {
 				</div>
 				<div className="flex flex-col lg:flex-row gap-5 mt-14 lg:mt-24">
 					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 py-6 lg:py-7 h-fit">
-						<h1 className="text-white text-xl lg:text-[21px] font-medium">
+						<h1 className="text-white text-xl lg:text-[22px]">
 							UI/UX Designer
 						</h1>
-						<p className="text-grey text-[15px] mt-3 lg:mt-4 leading-relaxed">
+						<p className="text-grey text-[15px] lg:text-base mt-3 lg:mt-4 leading-relaxed lg:leading-[1.7]">
 							From strategy to delivering results, I am the
 							architect of crafting digital products.
 						</p>
 					</div>
 					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 py-6 lg:py-7 h-fit">
-						<h1 className="text-white text-xl lg:text-[21px] font-medium">
+						<h1 className="text-white text-xl lg:text-[22px]">
 							Front-end Developer
 						</h1>
-						<p className="text-grey text-[15px] mt-3 lg:mt-4 leading-relaxed">
+						<p className="text-grey text-[15px] lg:text-base mt-3 lg:mt-4 leading-relaxed lg:leading-[1.7]">
 							I might not be an expert. But, I am able to
 							translate design into living web magic.
 						</p>
 					</div>
 					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 py-6 lg:py-7 h-fit">
-						<h1 className="text-white text-xl lg:text-[21px] font-medium">
+						<h1 className="text-white text-xl lg:text-[22px]">
 							No-code Developer
 						</h1>
-						<p className="text-grey text-[15px] mt-3 lg:mt-4 leading-relaxed">
+						<p className="text-grey text-[15px] lg:text-base mt-3 lg:mt-4 leading-relaxed lg:leading-[1.7]">
 							Anything can be built with seamless user-interface
 							and its functions in one canvas.
 						</p>

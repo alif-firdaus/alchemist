@@ -35,7 +35,7 @@ const config = {
 				sectionpxsm: "20px",
 				// md //
 				// lg //
-				sectionpxlg: "120px",
+				sectionpxlg: "100px",
 				// 2xl //
 				sectionpx2xl: "160px",
 			},

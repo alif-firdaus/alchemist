@@ -15,6 +15,9 @@ import { Rocket } from "lucide-react";
 // Import Assets //
 import sparkle from "@/assets/images/img-sparkle.svg";
 import graphic from "@/assets/images/img-graphic.png";
+import uiux from "@/assets/images/img-uiux.webp";
+import frontend from "@/assets/images/img-frontend.webp";
+import nocode from "@/assets/images/img-nocode.webp";
 import quote from "@/assets/images/img-quote.svg";
 import memoji from "@/assets/images/img-memoji.webp";
 import petaniweb from "@/assets/images/img-petaniweb.webp";
@@ -126,32 +129,50 @@ export default function Home() {
 					</p>
 				</div>
 				<div className="flex flex-col lg:flex-row gap-5 mt-14 lg:mt-24">
-					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 py-6 lg:py-7 h-fit">
+					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 pt-6 pb-7 lg:pt-7 lg:pb-8 h-fit">
 						<h1 className="text-white text-xl lg:text-[22px]">
 							UI/UX Designer
 						</h1>
-						<p className="text-grey text-[15px] lg:text-base mt-3 lg:mt-4 leading-relaxed lg:leading-[1.7]">
+						<p className="text-grey text-[15px] lg:text-base mt-4 leading-relaxed lg:leading-[1.7]">
 							From strategy to delivering results, I am the
 							architect of crafting digital products.
 						</p>
+						<Image
+							src={uiux}
+							alt="UI/UX Designer"
+							priority={true}
+							className="w-full h-auto mt-10 lg:mt-11"
+						/>
 					</div>
-					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 py-6 lg:py-7 h-fit">
+					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 pt-6 pb-7 lg:pt-7 lg:pb-8 h-fit">
 						<h1 className="text-white text-xl lg:text-[22px]">
 							Front-end Developer
 						</h1>
-						<p className="text-grey text-[15px] lg:text-base mt-3 lg:mt-4 leading-relaxed lg:leading-[1.7]">
+						<p className="text-grey text-[15px] lg:text-base mt-4 leading-relaxed lg:leading-[1.7]">
 							I might not be an expert. But, I am able to
 							translate design into living web magic.
 						</p>
+						<Image
+							src={frontend}
+							alt="Front End Developer"
+							priority={true}
+							className="w-full h-auto mt-10 lg:mt-11"
+						/>
 					</div>
-					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 py-6 lg:py-7 h-fit">
+					<div className="w-full rounded-xl lg:rounded-2xl  bg-darkgrey flex flex-col px-7 lg:px-8 pt-6 pb-7 lg:pt-7 lg:pb-8 h-fit">
 						<h1 className="text-white text-xl lg:text-[22px]">
 							No-code Developer
 						</h1>
-						<p className="text-grey text-[15px] lg:text-base mt-3 lg:mt-4 leading-relaxed lg:leading-[1.7]">
+						<p className="text-grey text-[15px] lg:text-base mt-4 leading-relaxed lg:leading-[1.7]">
 							Anything can be built with seamless user-interface
 							and its functions in one canvas.
 						</p>
+						<Image
+							src={nocode}
+							alt="No-code Developer"
+							priority={true}
+							className="w-full h-auto mt-10 lg:mt-11"
+						/>
 					</div>
 				</div>
 			</section>

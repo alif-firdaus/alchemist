@@ -20,7 +20,7 @@ export default function FooterDesktop() {
 	return (
 		<>
 			<div className="hidden lg:block px-8 pb-8">
-				<section className="bg-darkgrey lg:px-[88px] 2xl:px-[128px] pt-[74px] pb-16 rounded-[30px]">
+				<section className="bg-darkgrey lg:px-[68px] 2xl:px-[108px] pt-[74px] lg:pt-[68px] pb-16 rounded-[30px]">
 					<div className="w-full flex justify-between items-start">
 						<div className="flex flex-col">
 							<h1 className="text-[42px] leading-[1.20] text-white">

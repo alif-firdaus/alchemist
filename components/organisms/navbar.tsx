@@ -106,19 +106,6 @@ function Navbar() {
 		};
 	}, []);
 
-	// Stop scrolling //
-	useEffect(() => {
-		if (isOpen) {
-			document.body.classList.add("overflow-hidden");
-		} else {
-			document.body.classList.remove("overflow-hidden");
-		}
-
-		return () => {
-			document.body.classList.remove("overflow-hidden");
-		};
-	}, [isOpen]);
-
 	return (
 		<>
 			{/* <-- ==== Navbar Mobile Start ==== --> */}

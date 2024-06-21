@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -42,6 +42,9 @@ function Navbar() {
 	// Navbar Mobile View //
 	const [isOpen, setOpen] = useState(false);
 
+	// Store scroll position //
+	let scrollPosition = 0;
+
 	// Navbar Toggle //
 	const toggleMenu = () => {
 		setOpen((prevOpen) => !prevOpen);
@@ -81,11 +84,52 @@ function Navbar() {
 		}
 	};
 
+	// Navbar Background //
+	const [scrolling, setScrolling] = useState(false);
+
+	const handleScroll = () => {
+		if (window.scrollY > 0) {
+			setScrolling(true);
+		} else {
+			setScrolling(false);
+		}
+	};
+
+	useEffect(() => {
+		if (window.scrollY > 0) {
+			setScrolling(true);
+		}
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
+	// Stop scrolling //
+	useEffect(() => {
+		if (isOpen) {
+			document.body.classList.add("overflow-hidden");
+		} else {
+			document.body.classList.remove("overflow-hidden");
+		}
+
+		return () => {
+			document.body.classList.remove("overflow-hidden");
+		};
+	}, [isOpen]);
+
 	return (
 		<>
 			{/* <-- ==== Navbar Mobile Start ==== --> */}
 			<nav className="fixed flex w-full z-[100] lg:hidden">
-				<div className="flex items-center w-full justify-between px-sectionpxsm py-4 bg-bgbase bg-opacity-20 backdrop-blur-xl">
+				<div
+					className={`flex items-center w-full justify-between px-sectionpxsm py-4 ${
+						scrolling
+							? "bg-bgbase bg-opacity-20 backdrop-blur-2xl"
+							: "bg-transparent"
+					}`}
+				>
 					<Link href="/">
 						<div className="w-fit h-fit pb-[2px]">
 							<Image
@@ -232,7 +276,13 @@ function Navbar() {
 			{/* <-- ==== Navbar Mobile End ==== --> */}
 
 			{/* <-- ==== Navbar Desktop Start ==== --> */}
-			<nav className="hidden lg:flex fixed w-full px-sectionpxlg 2xl:px-sectionpx2xl bg-bgbase bg-opacity-25 backdrop-blur-2xl z-[100] py-5 items-center justify-between">
+			<nav
+				className={`hidden lg:flex fixed w-full px-sectionpxlg 2xl:px-sectionpx2xl z-[100] py-5 items-center justify-between transition-all duration-300 ${
+					scrolling
+						? "bg-bgbase bg-opacity-25 backdrop-blur-2xl"
+						: "bg-transparent"
+				}`}
+			>
 				<Link href="/">
 					<div className="w-fit h-fit pb-[2px]">
 						<Image

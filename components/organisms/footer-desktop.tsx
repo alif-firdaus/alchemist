@@ -23,7 +23,7 @@ export default function FooterDesktop() {
 				<section className="bg-darkgrey lg:px-[68px] 2xl:px-[108px] pt-[74px] lg:pt-[68px] pb-16 rounded-[30px]">
 					<div className="w-full flex justify-between items-start">
 						<div className="flex flex-col">
-							<h1 className="text-[42px] leading-[1.20] text-white">
+							<h1 className="text-[42px] leading-[1.20] bg-clip-text bg-gradient-to-br from-white from-10% to-[#949494] text-transparent">
 								Turning your ideas
 								<br /> into{" "}
 								<span className="text-secondary">

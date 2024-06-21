@@ -10,7 +10,7 @@ export default function Connect() {
 						Connect
 					</p>
 				</div>
-				<h1 className="text-5xl lg:text-[90px] lg:leading-[1.10] mt-[34px] lg:mt-11 text-white">
+				<h1 className="text-5xl lg:text-[90px] lg:leading-[1.10] mt-[34px] lg:mt-11 bg-clip-text bg-gradient-to-br from-white to-[#949494] text-transparent">
 					Pixel crafter
 					<br />
 					at your service

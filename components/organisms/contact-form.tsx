@@ -60,7 +60,7 @@ export default function ContactForm() {
 						required
 						autoComplete="off"
 						{...register("name")}
-						className="rounded-[10px] lg:rounded-lg w-full px-5 pt-[15px] lg:pt-4 pb-[17px] lg:pb-[18px] text-base placeholder-grey text-white bg-white bg-opacity-[0.04] focus:outline-none border border-white border-opacity-10 focus:border-opacity-30"
+						className="rounded-[10px] lg:rounded-lg w-full px-5 pt-[15px] lg:pt-4 pb-[17px] lg:pb-[18px] text-base placeholder-grey text-white bg-white bg-opacity-[0.02] focus:outline-none border border-white border-opacity-10 focus:border-opacity-30"
 					/>
 					{errors.name?.message && (
 						<p className="ml-1 mt-1 text-sm text-red-400">
@@ -78,7 +78,7 @@ export default function ContactForm() {
 						required
 						autoComplete="off"
 						{...register("email")}
-						className="rounded-[10px] lg:rounded-lg w-full px-5 pt-[15px] lg:pt-4 pb-[17px] lg:pb-[18px] text-base placeholder-grey text-white bg-white bg-opacity-[0.04] focus:outline-none border border-white border-opacity-10 focus:border-opacity-30"
+						className="rounded-[10px] lg:rounded-lg w-full px-5 pt-[15px] lg:pt-4 pb-[17px] lg:pb-[18px] text-base placeholder-grey text-white bg-white bg-opacity-[0.02] focus:outline-none border border-white border-opacity-10 focus:border-opacity-30"
 					/>
 					{errors.email?.message && (
 						<p className="ml-1 mt-2 text-sm text-red-400">
@@ -95,7 +95,7 @@ export default function ContactForm() {
 						placeholder="Phone Number (optional)"
 						autoComplete="off"
 						{...register("phone")}
-						className="rounded-[10px] lg:rounded-lg w-full px-5 pt-[15px] lg:pt-4 pb-[17px] lg:pb-[18px] text-base font-number placeholder-grey text-white bg-white bg-opacity-[0.04] focus:outline-none border border-white border-opacity-10 focus:border-opacity-30"
+						className="rounded-[10px] lg:rounded-lg w-full px-5 pt-[15px] lg:pt-4 pb-[17px] lg:pb-[18px] text-base font-number placeholder-grey text-white bg-white bg-opacity-[0.02] focus:outline-none border border-white border-opacity-10 focus:border-opacity-30"
 					/>
 				</div>
 				{/* <-- === Phone Number Input End === --> */}
@@ -108,7 +108,7 @@ export default function ContactForm() {
 						autoComplete="off"
 						rows={4}
 						{...register("message")}
-						className="rounded-[10px] lg:rounded-lg w-full px-5 pt-[15px] lg:pt-4 pb-[17px] lg:pb-[18px] text-base placeholder-grey text-white bg-white bg-opacity-[0.04] focus:outline-none border border-white border-opacity-10 focus:border-opacity-30"
+						className="rounded-[10px] lg:rounded-lg w-full px-5 pt-[15px] lg:pt-4 pb-[17px] lg:pb-[18px] text-base placeholder-grey text-white bg-white bg-opacity-[0.02] focus:outline-none border border-white border-opacity-10 focus:border-opacity-30"
 					/>
 					{errors.message?.message && (
 						<p className="ml-1 mt-2 text-sm text-red-400">

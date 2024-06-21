@@ -16,7 +16,7 @@ export default function Footer() {
 		<>
 			<div className="lg:hidden px-sectionpxsm pb-5">
 				<section className="bg-darkgrey rounded-2xl pt-8 pb-9 px-7">
-					<h1 className="text-[32px] leading-[1.15] text-left text-white">
+					<h1 className="text-[32px] leading-[1.15] text-left bg-clip-text bg-gradient-to-br from-white from-20% to-[#949494] text-transparent">
 						Turning your ideas into{" "}
 						<span className="text-secondary">real-life</span>{" "}
 						products is my calling

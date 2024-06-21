@@ -28,7 +28,7 @@ export default function Home() {
 	return (
 		<>
 			{/* <-- ==== Hero Section Start ==== --> */}
-			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-36 lg:pt-48 flex flex-col lg:flex-row lg:h-fit">
+			<section className="relative px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-36 lg:pt-48 flex flex-col lg:flex-row lg:h-fit">
 				<div className="flex flex-col justify-center lg:w-full lg:justify-between">
 					<div className="lg:h-full lg:flex lg:flex-col">
 						<div className="border border-white border-opacity-15 w-fit rounded-full flex gap-[14px] pl-[6px] pr-5 py-[6px] items-center justify-center">
@@ -48,7 +48,7 @@ export default function Home() {
 								Elevating products into perfection
 							</p>
 						</div>
-						<h1 className="text-[46px] lg:text-7xl leading-[1.14] lg:leading-[1.16] mt-7 lg:mt-8 text-white">
+						<h1 className="text-[46px] lg:text-7xl leading-[1.14] lg:leading-[1.16] mt-7 lg:mt-8 bg-clip-text bg-gradient-to-br from-white from-10% to-[#949494] text-transparent">
 							Stand out as
 							<span className="font-number"></span> <br />
 							your passionate
@@ -119,7 +119,7 @@ export default function Home() {
 							What do I do
 						</p>
 					</div>
-					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
+					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 bg-clip-text bg-gradient-to-br from-white from-10% to-[#949494] text-transparent">
 						No limitation. No stagnation.
 						<br className="hidden lg:block" /> No comfort-zone.
 					</h1>
@@ -308,7 +308,7 @@ export default function Home() {
 							Selected works
 						</p>
 					</div>
-					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
+					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 bg-clip-text bg-gradient-to-br from-white from-10% to-[#949494] text-transparent">
 						Driven by creating the
 						<br className="hidden lg:block" /> next-level digital
 						products
@@ -440,7 +440,7 @@ export default function Home() {
 							Tools & Tech-stacks
 						</p>
 					</div>
-					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 text-white">
+					<h1 className="text-4xl lg:text-[54px] lg:leading-[1.15] text-center mt-7 lg:mt-10 bg-clip-text bg-gradient-to-br from-white from-10% to-[#949494] text-transparent">
 						Crafting beauty in pixels, weaving
 						<br className="hidden lg:block" />
 						magic in code

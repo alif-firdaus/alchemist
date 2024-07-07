@@ -301,7 +301,10 @@ export default function Home() {
 			{/* <-- ==== About Section End ==== --> */}
 
 			{/* <-- ==== Portfolio Section Start ==== --> */}
-			<section className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl pt-44 lg:pt-56">
+			<section
+				id="case-studies"
+				className="px-sectionpxsm lg:px-sectionpxlg 2xl:px-sectionpx2xl mt-[150px] pt-[26px] lg:mt-[200] lg:pt-6"
+			>
 				<div className="flex flex-col items-center justify-center">
 					<div className="bg-secondary py-[5px] lg:py-[6px] px-4 flex items-center justify-center w-fit gap-[6px] rounded-full">
 						<p className="text-sm font-medium tracking-tight text-black">
@@ -325,7 +328,7 @@ export default function Home() {
 						category="Agency"
 						imageSrc={petaniweb}
 						alt="PetaniWeb Mockup"
-						link="/case-study/petaniweb"
+						link="/case-studies/petaniweb"
 						year={2024}
 						role1="UI/UX Design"
 						role2="Development"
@@ -337,7 +340,7 @@ export default function Home() {
 						category="Agency"
 						imageSrc={petaniweb}
 						alt="PetaniWeb Mockup"
-						link="/case-study/petaniweb"
+						link="/case-studies/petaniweb"
 						year={2024}
 						role1="UI/UX Design"
 						role2="Development"
@@ -351,7 +354,7 @@ export default function Home() {
 						category="Branding"
 						imageSrc={fixit}
 						alt="Fixit Mockup"
-						link="/case-study/fixit"
+						link="/case-studies/fixit"
 						year={2023}
 						role1="UI/UX Design"
 						role2="Research"
@@ -364,7 +367,7 @@ export default function Home() {
 							category="Branding"
 							imageSrc={fixit}
 							alt="Fixit Mockup"
-							link="/case-study/fixit"
+							link="/case-studies/fixit"
 							year={2023}
 							role1="UI/UX Design"
 							role2="Research"
@@ -381,7 +384,7 @@ export default function Home() {
 						category="SAAS"
 						imageSrc={reportify}
 						alt="Reportify Mockup"
-						link="/case-study/reportify"
+						link="/case-studies/reportify"
 						year={2023}
 						role1="UI/UX Design"
 						role2="Development"
@@ -393,7 +396,7 @@ export default function Home() {
 						category="SAAS"
 						imageSrc={reportify}
 						alt="Reportify Mockup"
-						link="/case-study/reportify"
+						link="/case-studies/reportify"
 						year={2023}
 						role1="UI/UX Design"
 						role2="Development"
@@ -407,7 +410,7 @@ export default function Home() {
 						category="Crypto"
 						imageSrc={fixit}
 						alt="AQUA Mockup"
-						link="/case-study/aqua"
+						link="/case-studies/aqua"
 						year={2022}
 						role1="UI/UX Design"
 						role2="Research"
@@ -420,7 +423,7 @@ export default function Home() {
 							category="Crypto"
 							imageSrc={fixit}
 							alt="AQUA Mockup"
-							link="/case-study/aqua"
+							link="/case-studies/aqua"
 							year={2022}
 							role1="UI/UX Design"
 							role2="Research"

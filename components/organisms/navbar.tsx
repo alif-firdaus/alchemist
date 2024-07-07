@@ -30,8 +30,8 @@ function Navbar() {
 			path: "/expertise",
 		},
 		{
-			text: "Case Study",
-			path: "/case-study",
+			text: "Case Studies",
+			path: "/#case-studies",
 		},
 		{
 			text: "Portfolio",
@@ -310,9 +310,9 @@ function Navbar() {
 						</div>
 					</Link>
 
-					<Link href="/case-study">
+					<Link href="/#case-studies">
 						<div className="flex items-center justify-center px-5 rounded-full bg-inherit py-[10px] hover:bg-white hover:bg-opacity-[0.07] duration-300 cursor-pointer">
-							<p className="text-sm text-white">Case Study</p>
+							<p className="text-sm text-white">Case Studies</p>
 						</div>
 					</Link>
 

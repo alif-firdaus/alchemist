@@ -84,18 +84,28 @@ function Navbar() {
 		}
 	};
 
-	// Navbar Background //
+	// Navbar Background and Scroll Direction //
 	const [scrolling, setScrolling] = useState(false);
+	const [scrollDirection, setScrollDirection] = useState("up");
 
 	const handleScroll = () => {
-		if (window.scrollY > 0) {
+		const currentScrollY = window.scrollY;
+		if (currentScrollY > 0) {
 			setScrolling(true);
 		} else {
 			setScrolling(false);
 		}
+
+		if (currentScrollY > scrollPosition) {
+			setScrollDirection("down");
+		} else {
+			setScrollDirection("up");
+		}
+		scrollPosition = currentScrollY;
 	};
 
 	useEffect(() => {
+		let scrollPosition = 0;
 		if (window.scrollY > 0) {
 			setScrolling(true);
 		}
@@ -268,6 +278,10 @@ function Navbar() {
 					scrolling
 						? "bg-bgbase bg-opacity-25 backdrop-blur-2xl"
 						: "bg-transparent"
+				} ${
+					scrollDirection === "down"
+						? "-translate-y-full"
+						: "translate-y-0"
 				}`}
 			>
 				<Link href="/">

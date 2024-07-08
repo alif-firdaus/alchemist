@@ -3,7 +3,7 @@ import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 // Import Icons //
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { ArrowUpRightIcon } from "lucide-react";
 
 interface PortfolioCardDesktopProps {
 	platform: string;
@@ -30,34 +30,38 @@ const PortfolioCardDesktop = ({
 }: PortfolioCardDesktopProps) => {
 	return (
 		<div className="hidden w-full lg:flex flex-col h-auto">
-			<div className="group w-full flex flex-col h-auto relative cursor-pointer">
-				<div className="absolute z-50 flex gap-[10px] h-fit justify-end inset-0 px-5 py-5">
-					<div className="py-2 rounded-full px-[18px] bg-white bg-opacity-10">
-						<p className="text-sm text-white font-light">
-							{platform}
-						</p>
-					</div>
-					<div className="py-2 rounded-full px-[18px] bg-white bg-opacity-10">
-						<p className="text-sm text-white font-light">
-							{category}
-						</p>
-					</div>
-				</div>
-				<div className="absolute z-40 w-full h-full inset-0 m-auto block group-hover:backdrop-blur-sm duration-200 transition-all ease-in-out">
-					<Link href={link}>
-						<div className="absolute hidden group-hover:flex items-center justify-center z-50 w-24 h-24 rounded-full bg-secondary m-auto inset-0 duration-300 ease-in transition-all">
-							<ArrowTopRightIcon className="text-black w-10 h-10" />
+			<Link href={link}>
+				<div className="group w-full flex flex-col h-auto relative overflow-hidden cursor-pointer rounded-3xl">
+					<div className="absolute z-50 flex h-fit justify-between items-center inset-0 pr-4 pl-7 py-4">
+						<div className="flex gap-[10px]">
+							<div className="py-2 h-fit rounded-full px-[18px] bg-white bg-opacity-[0.09]">
+								<p className="text-sm text-white font-light">
+									{platform}
+								</p>
+							</div>
+							<div className="py-2 h-fit rounded-full px-[18px] bg-white bg-opacity-[0.09]">
+								<p className="text-sm text-white font-light">
+									{category}
+								</p>
+							</div>
 						</div>
-					</Link>
-				</div>
 
-				<Image
-					src={imageSrc}
-					alt={alt}
-					priority={true}
-					className="w-full h-auto rounded-3xl"
-				/>
-			</div>
+						<div className="w-fit h-fit">
+							<ArrowUpRightIcon
+								className="text-secondary w-16 h-16 p-0 opacity-30 group-hover:opacity-100 duration-300"
+								strokeWidth={0.8}
+							/>
+						</div>
+					</div>
+
+					<Image
+						src={imageSrc}
+						alt={alt}
+						priority={true}
+						className="w-full h-auto group-hover:scale-110 transition-transform duration-300 group-hover:grayscale-[60%]"
+					/>
+				</div>
+			</Link>
 
 			<div className="flex flex-col mt-7 gap-3">
 				<div className="flex items-center justify-start gap-2">

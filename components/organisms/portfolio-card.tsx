@@ -2,6 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
+// Import Icons //
+import { ArrowUpRightIcon } from "lucide-react";
+
 interface PortfolioCardProps {
 	platform: string;
 	category: string;
@@ -27,29 +30,38 @@ const PortfolioCard = ({
 }: PortfolioCardProps) => {
 	return (
 		<div className="w-full flex lg:hidden flex-col h-auto">
-			<div className="group w-full flex flex-col h-auto relative cursor-pointer">
-				<div className="absolute z-50 flex gap-[10px] h-fit justify-end inset-0 px-4 py-4">
-					<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
-						<p className="text-sm text-white font-light">
-							{platform}
-						</p>
-					</div>
-					<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
-						<p className="text-sm text-white font-light">
-							{category}
-						</p>
-					</div>
-				</div>
+			<Link href={link}>
+				<div className="group w-full flex flex-col h-auto relative cursor-pointer">
+					<div className="absolute z-50 flex h-fit justify-between items-center inset-0 pr-3 pl-[18px] py-3">
+						<div className="flex gap-[10px]">
+							<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+								<p className="text-sm text-white font-light">
+									{platform}
+								</p>
+							</div>
+							<div className="py-[6px] rounded-full px-4 bg-white bg-opacity-10">
+								<p className="text-sm text-white font-light">
+									{category}
+								</p>
+							</div>
+						</div>
 
-				<Link href={link}>
+						<div className="w-fit h-fit">
+							<ArrowUpRightIcon
+								className="text-secondary w-12 h-12 p-0 opacity-90"
+								strokeWidth={0.8}
+							/>
+						</div>
+					</div>
+
 					<Image
 						src={imageSrc}
 						alt={alt}
 						priority={true}
 						className="w-full h-auto rounded-xl"
 					/>
-				</Link>
-			</div>
+				</div>
+			</Link>
 
 			<div className="flex flex-col mt-6 gap-2">
 				<div className="flex items-center justify-start gap-2">

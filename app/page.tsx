@@ -49,9 +49,9 @@ export default function Home() {
 								Elevating products into perfection
 							</p>
 						</div>
-						<h1 className="text-[46px] lg:text-7xl leading-[1.14] lg:leading-[1.14] mt-7 lg:mt-8 bg-clip-text bg-gradient-to-br from-white from-10% to-[#949494] text-transparent">
+						<h1 className="text-[46px] lg:text-7xl leading-[1.14] lg:leading-[1.12] mt-7 lg:mt-8 bg-clip-text bg-gradient-to-br from-white from-10% to-[#949494] text-transparent">
 							Stand out as
-							<span className="font-number"></span> <br />
+							<br />
 							your passionate
 							<br />
 							pixel crafter

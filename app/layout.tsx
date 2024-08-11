@@ -23,9 +23,12 @@ const numberFont = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
 	title: "Alchemist",
+	applicationName: "Alchemist",
+	authors: [{ name: "PetaniWeb Team", url: "https://aliffirdaus.com/" }],
+	publisher: "Vercel",
 	keywords: ["Personal", "Portfolio", "Designer", "UI", "UX"],
 	description:
-		"Personal Website; Crafting beauty in pixels, weaving magic in code.",
+		"Alchemist - Your Pasionate Pixel Crafter; Crafting beauty in pixels, weaving magic in code.",
 };
 
 export default function RootLayout({

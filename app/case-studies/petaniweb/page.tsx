@@ -24,14 +24,22 @@ export default function Petaniweb() {
 						<BreadcrumbSeparator />
 
 						<BreadcrumbItem>
-							<BreadcrumbPage>PetaniWeb Website</BreadcrumbPage>
+							<BreadcrumbLink href="/#case-studies">
+								Case Studies
+							</BreadcrumbLink>
+						</BreadcrumbItem>
+
+						<BreadcrumbSeparator />
+
+						<BreadcrumbItem>
+							<BreadcrumbPage>PetaniWeb</BreadcrumbPage>
 						</BreadcrumbItem>
 					</BreadcrumbList>
 				</Breadcrumb>
 
 				<div className="flex flex-col w-full mt-14">
 					<h3 className="text-3xl bg-clip-text bg-gradient-to-br from-white from-10% to-[#949494] text-transparent">
-						PetaniWeb Website
+						PetaniWeb
 					</h3>
 					<p className="text-grey text-base lg:text-[19px] font-light leading-[1.7] mt-[26px] lg:mt-10">
 						Cupcake ipsum dolor sit amet pie jelly beans danish

@@ -11,10 +11,14 @@ import { Toaster } from "@/components/ui/toaster";
 const mainFont = Raleway({
 	subsets: ["latin"],
 	variable: "--main-font",
+	weight: ["400", "700"],
+	display: "swap",
 });
 const numberFont = Plus_Jakarta_Sans({
 	subsets: ["latin"],
 	variable: "--number-font",
+	weight: ["400", "700"],
+	display: "swap",
 });
 
 export const metadata: Metadata = {

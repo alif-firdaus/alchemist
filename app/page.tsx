@@ -20,6 +20,7 @@ import frontend from "@/assets/images/img-frontend.webp";
 import nocode from "@/assets/images/img-nocode.webp";
 import quote from "@/assets/images/img-quote.svg";
 import memoji from "@/assets/images/img-memoji.webp";
+import fluxify from "@/assets/images/img-fluxify.webp";
 import petaniweb from "@/assets/images/img-petaniweb.webp";
 import fixit from "@/assets/images/img-fixit.webp";
 import reportify from "@/assets/images/img-reportify.webp";
@@ -322,115 +323,115 @@ export default function Home() {
 					</p>
 				</div>
 				<div className="flex flex-col lg:flex-row gap-16 lg:gap-7 mt-14 lg:mt-24">
-					{/* <-- === Portfolio PetaniWeb Start === --> */}
+					{/* <-- === Portfolio Fluxify Start === --> */}
 					<PortfolioCard
 						platform="Website"
-						category="Agency"
-						imageSrc={petaniweb}
-						alt="PetaniWeb Mockup"
-						link="/case-studies/petaniweb"
+						category="SAAS"
+						imageSrc={fluxify}
+						alt="Fluxify Mockup"
+						link="#"
 						year={2024}
 						role1="UI/UX Design"
-						role2="Development"
-						portfolioTitle="PetaniWeb Website"
+						role2="Webflow"
+						portfolioTitle="Fluxify SaaS"
 					/>
 
 					<PortfolioCardDesktop
 						platform="Website"
+						category="SAAS"
+						imageSrc={fluxify}
+						alt="Fluxify Mockup"
+						link="#"
+						year={2024}
+						role1="UI/UX Design"
+						role2="Webflow"
+						portfolioTitle="Fluxify SaaS"
+					/>
+					{/* <-- === Portfolio FLuxify End === --> */}
+
+					{/* <-- === Portfolio Petaniweb Start === --> */}
+					<PortfolioCard
+						platform="Website"
 						category="Agency"
 						imageSrc={petaniweb}
 						alt="PetaniWeb Mockup"
-						link="/case-studies/petaniweb"
+						link="#"
 						year={2024}
 						role1="UI/UX Design"
 						role2="Development"
-						portfolioTitle="PetaniWeb Website"
+						portfolioTitle="PetaniWeb Agency"
 					/>
-					{/* <-- === Portfolio PetaniWeb End === --> */}
 
+					<div className="lg:pt-32 lg:w-full">
+						<PortfolioCardDesktop
+							platform="Website"
+							category="Agency"
+							imageSrc={petaniweb}
+							alt="PetaniWeb Mockup"
+							link="#"
+							year={2023}
+							role1="UI/UX Design"
+							role2="Development"
+							portfolioTitle="PetaniWeb Agency"
+						/>
+					</div>
+					{/* <-- === Portfolio Petaniweb End === --> */}
+				</div>
+
+				<div className="flex flex-col lg:flex-row gap-16 lg:gap-7 mt-0 lg:mt-16">
 					{/* <-- === Portfolio Fixit Start === --> */}
 					<PortfolioCard
 						platform="Mobile App"
-						category="Branding"
+						category="Service"
 						imageSrc={fixit}
 						alt="Fixit Mockup"
-						link="/case-studies/fixit"
-						year={2023}
+						link="#"
+						year={2022}
 						role1="UI/UX Design"
 						role2="Research"
 						portfolioTitle="Fixit Mobile App"
 					/>
 
-					<div className="lg:pt-32 lg:w-full">
-						<PortfolioCardDesktop
-							platform="Mobile App"
-							category="Branding"
-							imageSrc={fixit}
-							alt="Fixit Mockup"
-							link="/case-studies/fixit"
-							year={2023}
-							role1="UI/UX Design"
-							role2="Research"
-							portfolioTitle="Fixit Mobile App"
-						/>
-					</div>
+					<PortfolioCardDesktop
+						platform="Mobile App"
+						category="Service"
+						imageSrc={fixit}
+						alt="Fixit Mockup"
+						link="#"
+						year={2022}
+						role1="UI/UX Design"
+						role2="Research"
+						portfolioTitle="Fixit Mobile App"
+					/>
 					{/* <-- === Portfolio Fixit End === --> */}
-				</div>
 
-				<div className="flex flex-col lg:flex-row gap-16 lg:gap-7 mt-0 lg:mt-16">
 					{/* <-- === Portfolio Reportify Start === --> */}
 					<PortfolioCard
 						platform="Website"
 						category="SAAS"
 						imageSrc={reportify}
 						alt="Reportify Mockup"
-						link="/case-studies/reportify"
+						link="#"
 						year={2023}
 						role1="UI/UX Design"
 						role2="Development"
-						portfolioTitle="Reportify Website"
-					/>
-
-					<PortfolioCardDesktop
-						platform="Website"
-						category="SAAS"
-						imageSrc={reportify}
-						alt="Reportify Mockup"
-						link="/case-studies/reportify"
-						year={2023}
-						role1="UI/UX Design"
-						role2="Development"
-						portfolioTitle="Reportify Website"
-					/>
-					{/* <-- === Portfolio Reportify End === --> */}
-
-					{/* <-- === Portfolio Aqua Start === --> */}
-					<PortfolioCard
-						platform="Mobile App"
-						category="Crypto"
-						imageSrc={fixit}
-						alt="AQUA Mockup"
-						link="/case-studies/aqua"
-						year={2022}
-						role1="UI/UX Design"
-						role2="Research"
-						portfolioTitle="AQUA Mobile App"
+						portfolioTitle="Reportify SaaS"
 					/>
 
 					<div className="lg:pt-32 lg:w-full">
 						<PortfolioCardDesktop
-							platform="Mobile App"
-							category="Crypto"
-							imageSrc={fixit}
-							alt="AQUA Mockup"
-							link="/case-studies/aqua"
-							year={2022}
+							platform="Website"
+							category="SAAS"
+							imageSrc={reportify}
+							alt="Reportify Mockup"
+							link="#"
+							year={2023}
 							role1="UI/UX Design"
-							role2="Research"
-							portfolioTitle="AQUA Mobile App"
+							role2="Development"
+							portfolioTitle="Reportify SaaS"
 						/>
 					</div>
-					{/* <-- === Portfolio Aqua End === --> */}
+					{/* <-- === Portfolio Reportify End === --> */}
 				</div>
 			</section>
 			{/* <-- ==== Portfolio Section End ==== --> */}

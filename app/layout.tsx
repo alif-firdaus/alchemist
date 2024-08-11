@@ -42,38 +42,10 @@ export default function RootLayout({
 			className={`scroll-smooth ${mainFont.variable} ${numberFont.variable}`}
 		>
 			<head>
-				<meta name="title" content="Alchemist" />
-				<meta
-					name="description"
-					content="Alchemist - Your Pasionate Pixel Crafter; Crafting beauty in pixels, weaving magic in code."
-				/>
-
-				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://aliffirdaus.com/" />
-				<meta property="og:title" content="Alchemist" />
-				<meta
-					property="og:description"
-					content="Alchemist - Your Pasionate Pixel Crafter; Crafting beauty in pixels, weaving magic in code."
-				/>
-				<meta
-					property="og:image"
-					content="https://metatags.io/images/meta-tags.png"
-				/>
-
-				<meta property="twitter:card" content="summary_large_image" />
-				<meta
-					property="twitter:url"
-					content="https://aliffirdaus.com/"
-				/>
-				<meta property="twitter:title" content="Alchemist" />
-				<meta
-					property="twitter:description"
-					content="Alchemist - Your Pasionate Pixel Crafter; Crafting beauty in pixels, weaving magic in code."
-				/>
-				<meta
-					property="twitter:image"
-					content="https://metatags.io/images/meta-tags.png"
-				/>
+				<meta property="og:image" content="<generated>" />
+				<meta property="og:image:type" content="<generated>" />
+				<meta property="og:image:width" content="<generated>" />
+				<meta property="og:image:height" content="<generated>" />
 			</head>
 			<body className="bg-bgbase">
 				<Navbar />
